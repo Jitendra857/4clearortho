@@ -1,7 +1,0 @@
-D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Release\4eOrtho.DAL.dll.config
-D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Release\4eOrtho.DAL.dll
-D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Release\4eOrtho.DAL.pdb
-D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Release\4eOrtho.DAL.csproj.CoreCompileInputs.cache
-D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Release\4eOrtho.DAL.dll
-D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Release\4eOrtho.DAL.pdb
-D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Release\4eOrtho.DAL.csproj.AssemblyReference.cache

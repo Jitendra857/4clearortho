@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D60EC457-12F6-4F72-AC6B-3D8707B80A9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_4eOrtho.BAL</RootNamespace>
+    <AssemblyName>4eOrtho.BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressMasterEntity.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="BecomeProviderEntity.cs" />
+    <Compile Include="CaseChargesEntity.cs" />
+    <Compile Include="CaseGalleryEntity.cs" />
+    <Compile Include="ConditionGalleryEntity.cs" />
+    <Compile Include="ClientTestimonialEntity.cs" />
+    <Compile Include="ContactMasterEntity.cs" />
+    <Compile Include="ContactUsEntity.cs" />
+    <Compile Include="AppointmentRequestEntity.cs" />
+    <Compile Include="DiscountMasterEntity.cs" />
+    <Compile Include="ErrorLogEntity.cs" />
+    <Compile Include="OrthoChargesEntity.cs" />
+    <Compile Include="LocalContactEntity.cs" />
+    <Compile Include="MailLogEntity.cs" />
+    <Compile Include="PatientBrochureEntity.cs" />
+    <Compile Include="PatientCaseDetailEntity.cs" />
+    <Compile Include="PatientEntity.cs" />
+    <Compile Include="PaymentFailureEntity.cs" />
+    <Compile Include="PaymentSuccessEntity.cs" />
+    <Compile Include="ReviewEntity.cs" />
+    <Compile Include="LookupTypeMasterEntity.cs" />
+    <Compile Include="DoctorRatingDetailsEntity.cs" />
+    <Compile Include="DoctorRatingEntity.cs" />
+    <Compile Include="LookupMasterEntity.cs" />
+    <Compile Include="PatientGalleryEntity.cs" />
+    <Compile Include="PatientGalleryMasterEntity.cs" />
+    <Compile Include="ProductGalleryEntity.cs" />
+    <Compile Include="PackageGalleryEntity.cs" />
+    <Compile Include="CourseEntity.cs" />
+    <Compile Include="GalleryEntity.cs" />
+    <Compile Include="CountryEntity.cs" />
+    <Compile Include="DoctorEntity.cs" />
+    <Compile Include="LanguagesEntity.cs" />
+    <Compile Include="LoginEntity.cs" />
+    <Compile Include="PackageMasterEntity.cs" />
+    <Compile Include="ObjectContextFactory.cs" />
+    <Compile Include="PageDetailsEntity.cs" />
+    <Compile Include="PagesEntity.cs" />
+    <Compile Include="ProductMasterEntity.cs" />
+    <Compile Include="ProductPackageMasterEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecommendedDentistEntity.cs" />
+    <Compile Include="StageEntity.cs" />
+    <Compile Include="StateEntity.cs" />
+    <Compile Include="SupplyOrderEntity.cs" />
+    <Compile Include="TrackCaseEntity.cs" />
+    <Compile Include="UserConfigEntity.cs" />
+    <Compile Include="UserEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\4eOrtho.DAL\4eOrtho.DAL.csproj">
+      <Project>{D828E166-074A-491B-9980-021D29FD9ECF}</Project>
+      <Name>4eOrtho.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\4eOrtho.Utility\4eOrtho.Utility.csproj">
+      <Project>{5825770d-10db-4be4-a521-d37a1019d8cb}</Project>
+      <Name>4eOrtho.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

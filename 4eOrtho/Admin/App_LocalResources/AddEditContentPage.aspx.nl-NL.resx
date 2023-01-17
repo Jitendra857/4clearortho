@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="chklstRoleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkStatusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlParentPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLanguageResource1.Text" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="lblLanguageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMenuNameResource1.Text" xml:space="preserve">
+    <value>Menu Naam</value>
+  </data>
+  <data name="lblMenuNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageContentResource1.Text" xml:space="preserve">
+    <value>Pagina-inhoud</value>
+  </data>
+  <data name="lblPageContentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageDescriptionResource1.Text" xml:space="preserve">
+    <value>Pagina Omschrijving</value>
+  </data>
+  <data name="lblPageDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageKeywordResource1.Text" xml:space="preserve">
+    <value>Pagina Keyword</value>
+  </data>
+  <data name="lblPageKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageTitleResource1.Text" xml:space="preserve">
+    <value>Pagina titel</value>
+  </data>
+  <data name="lblPageTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblParentPageResource1.Text" xml:space="preserve">
+    <value>Bovenliggende pagina</value>
+  </data>
+  <data name="lblParentPageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblRoleResource1.Text" xml:space="preserve">
+    <value>Voor ?</value>
+  </data>
+  <data name="lblRoleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStatusResource1.Text" xml:space="preserve">
+    <value>Is Active?</value>
+  </data>
+  <data name="lblStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblURLMenuNameResource1.Text" xml:space="preserve">
+    <value>Pagina naam (verschijnen in de URL)</value>
+  </data>
+  <data name="lblURLMenuNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Geduldig</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Dokter</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
+    <value>Admin - Inhoud toevoegen Pagina</value>
+  </data>
+  <data name="rqvMenuNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Menu Naam is vereist</value>
+  </data>
+  <data name="rqvMenuNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvMenuNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RqvPageDescriptionResource1.ErrorMessage" xml:space="preserve">
+    <value>Pagina Beschrijving is verplicht!</value>
+  </data>
+  <data name="RqvPageDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RqvPageDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RqvPageKeywordResource1.ErrorMessage" xml:space="preserve">
+    <value>Pagina Keyword is verplicht!</value>
+  </data>
+  <data name="RqvPageKeywordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RqvPageKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPageNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Vul Pagina naam</value>
+  </data>
+  <data name="rqvPageNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPageNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMenuNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMenuNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageKeywordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageKeywordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPageTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtURLMenuNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtURLMenuNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InsertContentPage" xml:space="preserve">
+    <value>Inhoud van de pagina opslaan succes</value>
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UpdateContentPage" xml:space="preserve">
+    <value>Inhoud van de pagina update correct</value>
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>Inhoud toevoegen Pagina</value>
+  </data>
+  <data name="lblHeaderResource2" xml:space="preserve">
+    <value>Bewerken Inhoud pagina</value>
+  </data>
+  <data name="PageResource1" xml:space="preserve">
+    <value>Admin - bewerken Inhoud Pagina</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="MenuAlreadyExist" xml:space="preserve">
+    <value>Menu Naam wordt al bestaan ..!</value>
+  </data>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Openbaar</value>
+  </data>
+</root>

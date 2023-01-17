@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="_4eOrtho.Admin.AdminMaster" %>
+
+<%@ Register Src="~/UserControls/AdminMenuControl.ascx" TagName="UCMenu" TagPrefix="UC" %>
+<%@ Register Src="~/UserControls/AdminTopControl.ascx" TagName="UCTop" TagPrefix="UC" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">    
+    <link href="Styles/common.css" rel="stylesheet" />
+    <link href="Styles/jquery.treeTable.css" rel="stylesheet" />
+    <script type="text/javascript" src="../Scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.treeTable.js"></script>
+    <script type="text/javascript" src="../Scripts/HTMLEditor/tiny_mce.js"></script>    
+    <link rel="shortcut icon" type="image/x-icon" href="Images/logo.ico" />
+    <script src="../Scripts/loadingoverlay.min.js"></script>
+    <link rel="stylesheet" id="csEnglish" type="text/css" />
+    <link rel="stylesheet" id="csajaxEnglish" type="text/css" />    
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequest);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequest);
+        });
+
+        function BeginRequest() {
+            loadingoverlayShow();            
+        }
+
+        function EndRequest() {
+            loadingoverlayHide();            
+        }
+
+        function loadingoverlayShow() {
+            $.LoadingOverlay("show", {
+                image: "../content/images/loader.gif"
+            });
+        }
+        function loadingoverlayHide() {
+            $.LoadingOverlay("hide", {
+                image: "../content/images/loader.gif"
+            });
+        }
+    </script>        
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <asp:ScriptManager ID="scrMng" runat="server">
+        </asp:ScriptManager>
+        <div id="wrapper" class="cf">
+            <UC:UCTop ID="ucTopControl" runat="server" />
+            <UC:UCMenu ID="ucMenuControl" runat="server" />
+        </div>
+        <div class="cf" id="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+        <div id="wrapper" class="cf">
+            <div id="footer" class="cf">
+                <div class="footer_left">©<%=DateTime.Now.Year.ToString() %>  4ClearOrtho.com <%= this.GetLocalResourceObject("Rights") %></div>
+                <div class="footer_right"><%= this.GetLocalResourceObject("Powered by") %> <a class="linkbuttonclass" href="http://www.4edental.com" target="_blank">4edental.com</a></div>
+            </div>
+            <div class="clear"></div>
+        </div>        
+    </form>   
+</body>
+</html>

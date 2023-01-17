@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>Annullera</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>Annullera</value>
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>Återställa</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value>Återställa</value>
+  </data>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>Överlämna</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>Överlämna</value>
+  </data>
+  <data name="chkIsActiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Se till att du skriver ditt lösenord i båda fälten.</value>
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custtxtColorResource1.ErrorMessage" xml:space="preserve">
+    <value>Färg finns redan, försök en annan</value>
+  </data>
+  <data name="custtxtColorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custtxtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtDoctorNoResource1.ErrorMessage" xml:space="preserve">
+    <value>Doktor ID redan finns, försök en annan</value>
+  </data>
+  <data name="custxtDoctorNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtDoctorNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtEmailidResource1.ErrorMessage" xml:space="preserve">
+    <value>E-ID redan finns, försök en annan</value>
+  </data>
+  <data name="custxtEmailidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtEmailidResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>Användarnamn finns redan, försök en annan</value>
+  </data>
+  <data name="custxtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFeeScheduleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSpecialtyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccountInformationResource1.Text" xml:space="preserve">
+    <value>Kontoinformation</value>
+  </data>
+  <data name="lblAccountInformationResource1.ToolTip" xml:space="preserve">
+    <value>Kontoinformation</value>
+  </data>
+  <data name="lblAddressResource1.Text" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="lblAddressResource1.ToolTip" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="lblAssignedOperatoriesResource1.Text" xml:space="preserve">
+    <value>Tilldelade Operatories</value>
+  </data>
+  <data name="lblAssignedOperatoriesResource1.ToolTip" xml:space="preserve">
+    <value>Tilldelade Operatories</value>
+  </data>
+  <data name="lblCityResource1.Text" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="lblCityResource1.ToolTip" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="lblColorResource1.Text" xml:space="preserve">
+    <value>Färg</value>
+  </data>
+  <data name="lblColorResource1.ToolTip" xml:space="preserve">
+    <value>Färg</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.Text" xml:space="preserve">
+    <value>Bekräfta Lösenord</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value>Bekräfta Lösenord</value>
+  </data>
+  <data name="lblContactInformationResource1.Text" xml:space="preserve">
+    <value>Kontaktinformation</value>
+  </data>
+  <data name="lblContactInformationResource1.ToolTip" xml:space="preserve">
+    <value>Kontaktinformation</value>
+  </data>
+  <data name="lblContactResource1.Text" xml:space="preserve">
+    <value>Kontakta</value>
+  </data>
+  <data name="lblContactResource1.ToolTip" xml:space="preserve">
+    <value>Kontakta</value>
+  </data>
+  <data name="lblCountryResource1.Text" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="lblCountryResource1.ToolTip" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="lblCrossOrShieldResource1.Text" xml:space="preserve">
+    <value>Cross Eller Shield</value>
+  </data>
+  <data name="lblCrossOrShieldResource1.ToolTip" xml:space="preserve">
+    <value>Cross Eller Shield</value>
+  </data>
+  <data name="lblCrossShieldValueResource1.Text" xml:space="preserve">
+    <value>Cross / Shield Värde</value>
+  </data>
+  <data name="lblCrossShieldValueResource1.ToolTip" xml:space="preserve">
+    <value>Cross / Shield Värde</value>
+  </data>
+  <data name="lblDOBResource1.Text" xml:space="preserve">
+    <value>DOB</value>
+  </data>
+  <data name="lblDOBResource1.ToolTip" xml:space="preserve">
+    <value>DOB</value>
+  </data>
+  <data name="lblDoctorIDResource1.Text" xml:space="preserve">
+    <value>Doktor ID</value>
+  </data>
+  <data name="lblDoctorIDResource1.ToolTip" xml:space="preserve">
+    <value>Doktor ID</value>
+  </data>
+  <data name="lblDrugIDResource1.Text" xml:space="preserve">
+    <value>Drug ID #</value>
+  </data>
+  <data name="lblDrugIDResource1.ToolTip" xml:space="preserve">
+    <value>Drug ID #</value>
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>E-post</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value>E-post</value>
+  </data>
+  <data name="lblFeeResource1.Text" xml:space="preserve">
+    <value>Avgift</value>
+  </data>
+  <data name="lblFeeResource1.ToolTip" xml:space="preserve">
+    <value>Avgift</value>
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>Förnamn</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value>Förnamn</value>
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>Lägg Doktor Detalj</value>
+  </data>
+  <data name="lblHeaderResource1.ToolTip" xml:space="preserve">
+    <value>Lägg Doktor Detalj</value>
+  </data>
+  <data name="lblHomeResource1.Text" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="lblHomeResource1.ToolTip" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="lblIsActiveResource1.Text" xml:space="preserve">
+    <value>Är Aktiv</value>
+  </data>
+  <data name="lblIsActiveResource1.ToolTip" xml:space="preserve">
+    <value>Är Aktiv</value>
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>Efternamn</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value>Efternamn</value>
+  </data>
+  <data name="lblMedicalResource1.Text" xml:space="preserve">
+    <value>Medicinsk#</value>
+  </data>
+  <data name="lblMedicalResource1.ToolTip" xml:space="preserve">
+    <value>Medicinsk#</value>
+  </data>
+  <data name="lblMedicareResource1.Text" xml:space="preserve">
+    <value>Medicare #</value>
+  </data>
+  <data name="lblMedicareResource1.ToolTip" xml:space="preserve">
+    <value>Medicare #</value>
+  </data>
+  <data name="lblMiddleInitialResource1.Text" xml:space="preserve">
+    <value>MI (USA Initial)</value>
+  </data>
+  <data name="lblMiddleInitialResource1.ToolTip" xml:space="preserve">
+    <value>MI (USA Initial)</value>
+  </data>
+  <data name="lblMobileResource1.Text" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="lblMobileResource1.ToolTip" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNPIResource1.Text" xml:space="preserve">
+    <value>NPI#</value>
+  </data>
+  <data name="lblNPIResource1.ToolTip" xml:space="preserve">
+    <value>NPI#</value>
+  </data>
+  <data name="lblNumbersInformationResource1.Text" xml:space="preserve">
+    <value>Numbers Information</value>
+  </data>
+  <data name="lblNumbersInformationResource1.ToolTip" xml:space="preserve">
+    <value>Numbers Information</value>
+  </data>
+  <data name="lblOfficeResource1.Text" xml:space="preserve">
+    <value>Kontor#</value>
+  </data>
+  <data name="lblOfficeResource1.ToolTip" xml:space="preserve">
+    <value>Kontor#</value>
+  </data>
+  <data name="lblOtherIDResource1.Text" xml:space="preserve">
+    <value>Annat ID #</value>
+  </data>
+  <data name="lblOtherIDResource1.ToolTip" xml:space="preserve">
+    <value>Annat ID #</value>
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="lblPersonalDetailResource1.Text" xml:space="preserve">
+    <value>Personlig Detalj</value>
+  </data>
+  <data name="lblPersonalDetailResource1.ToolTip" xml:space="preserve">
+    <value>Personlig Detalj</value>
+  </data>
+  <data name="lblProvResource1.Text" xml:space="preserve">
+    <value>Prov #</value>
+  </data>
+  <data name="lblProvResource1.ToolTip" xml:space="preserve">
+    <value>Prov #</value>
+  </data>
+  <data name="lblSpecialtyFeesResource1.Text" xml:space="preserve">
+    <value>Specialitet</value>
+  </data>
+  <data name="lblSpecialtyFeesResource1.ToolTip" xml:space="preserve">
+    <value>Specialitet</value>
+  </data>
+  <data name="lblSpecialtyResource1.Text" xml:space="preserve">
+    <value>Specialitet</value>
+  </data>
+  <data name="lblSpecialtyResource1.ToolTip" xml:space="preserve">
+    <value>Specialitet</value>
+  </data>
+  <data name="lblSSNResource1.Text" xml:space="preserve">
+    <value>SSN#</value>
+  </data>
+  <data name="lblSSNResource1.ToolTip" xml:space="preserve">
+    <value>SSN#</value>
+  </data>
+  <data name="lblStateIDResource1.Text" xml:space="preserve">
+    <value>State ID #</value>
+  </data>
+  <data name="lblStateIDResource1.ToolTip" xml:space="preserve">
+    <value>State ID #</value>
+  </data>
+  <data name="lblStateResource1.Text" xml:space="preserve">
+    <value>Ange</value>
+  </data>
+  <data name="lblStateResource1.ToolTip" xml:space="preserve">
+    <value>Ange</value>
+  </data>
+  <data name="lblStreetResource1.Text" xml:space="preserve">
+    <value>Gata</value>
+  </data>
+  <data name="lblStreetResource1.ToolTip" xml:space="preserve">
+    <value>Gata</value>
+  </data>
+  <data name="lblTINResource1.Text" xml:space="preserve">
+    <value>TENN#</value>
+  </data>
+  <data name="lblTINResource1.ToolTip" xml:space="preserve">
+    <value>TENN#</value>
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="lblUserNameResource1.Text" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="lblUserNameResource1.ToolTip" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="lblWorkResource1.Text" xml:space="preserve">
+    <value>Arbete</value>
+  </data>
+  <data name="lblWorkResource1.ToolTip" xml:space="preserve">
+    <value>Arbete</value>
+  </data>
+  <data name="lblZipCodeResource1.Text" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="lblZipCodeResource1.ToolTip" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Välj staten</value>
+  </data>
+  <data name="lstAssignedOperateriesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>4eDental - Lägg till Edit Doctor</value>
+  </data>
+  <data name="rdbblueCrossResource1.Text" xml:space="preserve">
+    <value>Blue Cross</value>
+  </data>
+  <data name="rdbblueCrossResource1.ToolTip" xml:space="preserve">
+    <value>Blue Cross</value>
+  </data>
+  <data name="rdbblueSchieldResource1.Text" xml:space="preserve">
+    <value>Blue Shield</value>
+  </data>
+  <data name="rdbblueSchieldResource1.ToolTip" xml:space="preserve">
+    <value>Blue Shield</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange giltiga Email ID t.ex: "abc@yahoo.com"</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvHomeResource1.ErrorMessage" xml:space="preserve">
+    <value>Endast numeriska värden, -,+, () tillåts</value>
+  </data>
+  <data name="rgvHomeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvHomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvMobileResource1.ErrorMessage" xml:space="preserve">
+    <value>Endast numeriska värden, -,+, () tillåts</value>
+  </data>
+  <data name="rgvMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvtxtNPINoResource1.ErrorMessage" xml:space="preserve">
+    <value>NPI nummer måste vara 10 eller 15 siffror</value>
+  </data>
+  <data name="rgvtxtNPINoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvtxtNPINoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvWorkResource1.ErrorMessage" xml:space="preserve">
+    <value>Endast numeriska värden, -,+, () tillåts</value>
+  </data>
+  <data name="rgvWorkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvWorkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvZipCodeResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange giltiga postnummer.</value>
+  </data>
+  <data name="rgvZipCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Lösenord måste vara 7 tecken långt med minst 4 bokstäver och 3 siffror.</value>
+  </data>
+  <data name="rqvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtColorResource1.ErrorMessage" xml:space="preserve">
+    <value>Välj färg</value>
+  </data>
+  <data name="rqvtxtColorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange Bekräfta lösenord</value>
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtDoctorIDResource1.ErrorMessage" xml:space="preserve">
+    <value>Vänligen ange Doktor ID</value>
+  </data>
+  <data name="rqvtxtDoctorIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtDoctorIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtEmailIdResource1.ErrorMessage" xml:space="preserve">
+    <value>Vänligen Ange e-ID</value>
+  </data>
+  <data name="rqvtxtEmailIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtEmailIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange förnamn</value>
+  </data>
+  <data name="rqvtxtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange Efternamn</value>
+  </data>
+  <data name="rqvtxtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtMobileResource1.ErrorMessage" xml:space="preserve">
+    <value>Vänligen ange mobilnummer</value>
+  </data>
+  <data name="rqvtxtMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Vänligen ange lösenord</value>
+  </data>
+  <data name="rqvtxtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>Vänligen ange användarnamn</value>
+  </data>
+  <data name="rqvtxtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtColorResource1.Text" xml:space="preserve">
+    <value>#990000</value>
+  </data>
+  <data name="txtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCrossOrSchieldValueResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCrossOrSchieldValueResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDOBResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDOBResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDoctorNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDoctorNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDrugNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDrugNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailidResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txthomeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txthomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicalNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicalNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicareResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicareResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtmobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtmobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNPINoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNPINoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOfficeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOfficeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSSNNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSSNNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStateIDNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStateIDNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTINNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTINNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtworkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtworkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtZipResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtZipResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Ange Bekräfta lösenord</value>
+  </data>
+  <data name="URLhampered" xml:space="preserve">
+    <value>URL försvårades</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>4eDental - Redigera Doktor Detaljer</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>4Clear Ortho - Redigera Doktor Detaljer</value>
+  </data>
+  <data name="AddTitle" xml:space="preserve">
+    <value>4Clear Ortho - Lägg Doctor Detaljer</value>
+  </data>
+  <data name="lblHeaderEditResource1.Text" xml:space="preserve">
+    <value>Redigera Doktor Detalj</value>
+  </data>
+  <data name="lblHeaderEditResource1.ToolTip" xml:space="preserve">
+    <value>Redigera Doktor Detalj</value>
+  </data>
+  <data name="cvUserNameResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange minst 3 alfabetet tecken</value>
+  </data>
+  <data name="cvUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>Ange bekräfta lösenord</value>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblShowPasswordResource1.Text" xml:space="preserve">
+    <value>Visa lösenord</value>
+  </data>
+  <data name="lblShowPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkPhotoChangeResource1.Text" xml:space="preserve">
+    <value>Förändring bild</value>
+  </data>
+  <data name="lnkPhotoChangeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkRemovePhotoResource1.Text" xml:space="preserve">
+    <value>Ta bort-bild</value>
+  </data>
+  <data name="lnkRemovePhotoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>Välj Datum</value>
+  </data>
+  <data name="RemovePhotoMessage" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort fotot?</value>
+  </data>
+  <data name="lblZoneResource.Text" xml:space="preserve">
+    <value>Time Zone Information</value>
+  </data>
+  <data name="lblZoneSelectResource.Text" xml:space="preserve">
+    <value>Välj tidszon</value>
+  </data>
+  <data name="rqvddlZoneResource.ErrorMessage" xml:space="preserve">
+    <value>Välj din tidszon.</value>
+  </data>
+  <data name="lblDegreeResource.Text" xml:space="preserve">
+    <value>Grad</value>
+  </data>
+  <data name="lblGenderResource.Text" xml:space="preserve">
+    <value>Kön</value>
+  </data>
+  <data name="rbtnFemaleResource.Text" xml:space="preserve">
+    <value>Kvinnlig</value>
+  </data>
+  <data name="rbtnMaleResource.Text" xml:space="preserve">
+    <value>Manlig</value>
+  </data>
+</root>

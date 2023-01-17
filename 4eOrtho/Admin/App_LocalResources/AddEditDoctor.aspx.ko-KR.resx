@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>재설정</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value>재설정</value>
+  </data>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="chkIsActiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>당신이 두 곳에 암호를 입력하는것을 확인하십시오.</value>
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmptxtConfirmNewPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custtxtColorResource1.ErrorMessage" xml:space="preserve">
+    <value>색상이 존재, 또 다른 하나를 시도하십시오</value>
+  </data>
+  <data name="custtxtColorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custtxtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtDoctorNoResource1.ErrorMessage" xml:space="preserve">
+    <value>의사 ID가 이미 존재하고, 또 다른 하나를 시도하십시오</value>
+  </data>
+  <data name="custxtDoctorNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtDoctorNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtEmailidResource1.ErrorMessage" xml:space="preserve">
+    <value>EMAIL-ID가 존재, 다른 하나를 시도하십시오</value>
+  </data>
+  <data name="custxtEmailidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtEmailidResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>사용자 이름이 이미 존재하니, 또 다른이름을 시도하십시오</value>
+  </data>
+  <data name="custxtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="custxtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCountryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFeeScheduleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSpecialtyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlStateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccountInformationResource1.Text" xml:space="preserve">
+    <value>계정 정보</value>
+  </data>
+  <data name="lblAccountInformationResource1.ToolTip" xml:space="preserve">
+    <value>계정 정보</value>
+  </data>
+  <data name="lblAddressResource1.Text" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="lblAddressResource1.ToolTip" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="lblAssignedOperatoriesResource1.Text" xml:space="preserve">
+    <value>치료실</value>
+  </data>
+  <data name="lblAssignedOperatoriesResource1.ToolTip" xml:space="preserve">
+    <value>치료실</value>
+  </data>
+  <data name="lblCityResource1.Text" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="lblCityResource1.ToolTip" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="lblColorResource1.Text" xml:space="preserve">
+    <value>색</value>
+  </data>
+  <data name="lblColorResource1.ToolTip" xml:space="preserve">
+    <value>색</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.Text" xml:space="preserve">
+    <value>비밀번호 확인</value>
+  </data>
+  <data name="lblConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value>비밀번호 확인</value>
+  </data>
+  <data name="lblContactInformationResource1.Text" xml:space="preserve">
+    <value>연락처 정보</value>
+  </data>
+  <data name="lblContactInformationResource1.ToolTip" xml:space="preserve">
+    <value>연락처 정보</value>
+  </data>
+  <data name="lblContactResource1.Text" xml:space="preserve">
+    <value>연락인</value>
+  </data>
+  <data name="lblContactResource1.ToolTip" xml:space="preserve">
+    <value>연락인</value>
+  </data>
+  <data name="lblCountryResource1.Text" xml:space="preserve">
+    <value>국가</value>
+  </data>
+  <data name="lblCountryResource1.ToolTip" xml:space="preserve">
+    <value>국가</value>
+  </data>
+  <data name="lblCrossOrShieldResource1.Text" xml:space="preserve">
+    <value>크로스 또는 방패</value>
+  </data>
+  <data name="lblCrossOrShieldResource1.ToolTip" xml:space="preserve">
+    <value>크로스 또는 방패</value>
+  </data>
+  <data name="lblCrossShieldValueResource1.Text" xml:space="preserve">
+    <value>크로스 / 방패 값</value>
+  </data>
+  <data name="lblCrossShieldValueResource1.ToolTip" xml:space="preserve">
+    <value>크로스 / 방패 값</value>
+  </data>
+  <data name="lblDOBResource1.Text" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="lblDOBResource1.ToolTip" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="lblDoctorIDResource1.Text" xml:space="preserve">
+    <value>치과 등록. 아니.</value>
+  </data>
+  <data name="lblDoctorIDResource1.ToolTip" xml:space="preserve">
+    <value>치과 등록. 아니.</value>
+  </data>
+  <data name="lblDrugIDResource1.Text" xml:space="preserve">
+    <value>약물 ID 번호</value>
+  </data>
+  <data name="lblDrugIDResource1.ToolTip" xml:space="preserve">
+    <value>약물 ID 번호</value>
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>이메일</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value>이메일</value>
+  </data>
+  <data name="lblFeeResource1.Text" xml:space="preserve">
+    <value>치료비</value>
+  </data>
+  <data name="lblFeeResource1.ToolTip" xml:space="preserve">
+    <value>치료비</value>
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>세부 사항추가</value>
+  </data>
+  <data name="lblHeaderResource1.ToolTip" xml:space="preserve">
+    <value>세부 사항추가</value>
+  </data>
+  <data name="lblHomeResource1.Text" xml:space="preserve">
+    <value>집</value>
+  </data>
+  <data name="lblHomeResource1.ToolTip" xml:space="preserve">
+    <value>집</value>
+  </data>
+  <data name="lblIsActiveResource1.Text" xml:space="preserve">
+    <value>현재환자</value>
+  </data>
+  <data name="lblIsActiveResource1.ToolTip" xml:space="preserve">
+    <value>현재환자</value>
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>성</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value>성</value>
+  </data>
+  <data name="lblMedicalResource1.Text" xml:space="preserve">
+    <value>의료 #</value>
+  </data>
+  <data name="lblMedicalResource1.ToolTip" xml:space="preserve">
+    <value>의료 #</value>
+  </data>
+  <data name="lblMedicareResource1.Text" xml:space="preserve">
+    <value>국민의료 보험 케어 번호</value>
+  </data>
+  <data name="lblMedicareResource1.ToolTip" xml:space="preserve">
+    <value>국민의료 보험 케어 번호</value>
+  </data>
+  <data name="lblMiddleInitialResource1.Text" xml:space="preserve">
+    <value>MI (중간 초기)</value>
+  </data>
+  <data name="lblMiddleInitialResource1.ToolTip" xml:space="preserve">
+    <value>MI (중간 초기)</value>
+  </data>
+  <data name="lblMobileResource1.Text" xml:space="preserve">
+    <value>핸드폰</value>
+  </data>
+  <data name="lblMobileResource1.ToolTip" xml:space="preserve">
+    <value>핸드폰</value>
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNPIResource1.Text" xml:space="preserve">
+    <value>의사 번호</value>
+  </data>
+  <data name="lblNPIResource1.ToolTip" xml:space="preserve">
+    <value>의사 번호</value>
+  </data>
+  <data name="lblNumbersInformationResource1.Text" xml:space="preserve">
+    <value>번호 정보</value>
+  </data>
+  <data name="lblNumbersInformationResource1.ToolTip" xml:space="preserve">
+    <value>번호 정보</value>
+  </data>
+  <data name="lblOfficeResource1.Text" xml:space="preserve">
+    <value>사무실 #</value>
+  </data>
+  <data name="lblOfficeResource1.ToolTip" xml:space="preserve">
+    <value>사무실 #</value>
+  </data>
+  <data name="lblOtherIDResource1.Text" xml:space="preserve">
+    <value>다른 ID 번호</value>
+  </data>
+  <data name="lblOtherIDResource1.ToolTip" xml:space="preserve">
+    <value>다른 ID 번호</value>
+  </data>
+  <data name="lblPasswordResource1.Text" xml:space="preserve">
+    <value>암호</value>
+  </data>
+  <data name="lblPasswordResource1.ToolTip" xml:space="preserve">
+    <value>암호</value>
+  </data>
+  <data name="lblPersonalDetailResource1.Text" xml:space="preserve">
+    <value>개인 세부 사항</value>
+  </data>
+  <data name="lblPersonalDetailResource1.ToolTip" xml:space="preserve">
+    <value>개인 세부 사항</value>
+  </data>
+  <data name="lblProvResource1.Text" xml:space="preserve">
+    <value>치료인 번호</value>
+  </data>
+  <data name="lblProvResource1.ToolTip" xml:space="preserve">
+    <value>치료인 번호</value>
+  </data>
+  <data name="lblSpecialtyFeesResource1.Text" xml:space="preserve">
+    <value>전문</value>
+  </data>
+  <data name="lblSpecialtyFeesResource1.ToolTip" xml:space="preserve">
+    <value>전문</value>
+  </data>
+  <data name="lblSpecialtyResource1.Text" xml:space="preserve">
+    <value>전문의 치료</value>
+  </data>
+  <data name="lblSpecialtyResource1.ToolTip" xml:space="preserve">
+    <value>전문의 치료</value>
+  </data>
+  <data name="lblSSNResource1.Text" xml:space="preserve">
+    <value>주민등록번호</value>
+  </data>
+  <data name="lblSSNResource1.ToolTip" xml:space="preserve">
+    <value>주민등록번호</value>
+  </data>
+  <data name="lblStateIDResource1.Text" xml:space="preserve">
+    <value>국가 ID 번호</value>
+  </data>
+  <data name="lblStateIDResource1.ToolTip" xml:space="preserve">
+    <value>국가 ID 번호</value>
+  </data>
+  <data name="lblStateResource1.Text" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="lblStateResource1.ToolTip" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="lblStreetResource1.Text" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="lblStreetResource1.ToolTip" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="lblTINResource1.Text" xml:space="preserve">
+    <value>세금 번호</value>
+  </data>
+  <data name="lblTINResource1.ToolTip" xml:space="preserve">
+    <value>세금 번호</value>
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>표제</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value>표제</value>
+  </data>
+  <data name="lblUserNameResource1.Text" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="lblUserNameResource1.ToolTip" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="lblWorkResource1.Text" xml:space="preserve">
+    <value>직장</value>
+  </data>
+  <data name="lblWorkResource1.ToolTip" xml:space="preserve">
+    <value>직장</value>
+  </data>
+  <data name="lblZipCodeResource1.Text" xml:space="preserve">
+    <value>우편 번호</value>
+  </data>
+  <data name="lblZipCodeResource1.ToolTip" xml:space="preserve">
+    <value>우편 번호</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Select State</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lstAssignedOperateriesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>4Clear Ortho - 편집 의사 추가</value>
+  </data>
+  <data name="rdbblueCrossResource1.Text" xml:space="preserve">
+    <value>블루 크로스</value>
+  </data>
+  <data name="rdbblueCrossResource1.ToolTip" xml:space="preserve">
+    <value>블루 크로스</value>
+  </data>
+  <data name="rdbblueSchieldResource1.Text" xml:space="preserve">
+    <value>블루 쉴드</value>
+  </data>
+  <data name="rdbblueSchieldResource1.ToolTip" xml:space="preserve">
+    <value>블루 쉴드</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ErrorMessage" xml:space="preserve">
+    <value>유효한 이메일 ID를 입력하십시오</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvHomeResource1.ErrorMessage" xml:space="preserve">
+    <value>숫자 만 값은, -, +, () 허용</value>
+  </data>
+  <data name="rgvHomeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvHomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvMobileResource1.ErrorMessage" xml:space="preserve">
+    <value>숫자 만 값은, -, +, () 허용</value>
+  </data>
+  <data name="rgvMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvtxtNPINoResource1.ErrorMessage" xml:space="preserve">
+    <value>NPI의 수는 10 또는 15 자리 여야합니다</value>
+  </data>
+  <data name="rgvtxtNPINoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvtxtNPINoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvWorkResource1.ErrorMessage" xml:space="preserve">
+    <value>숫자 만 값은, -, +, () 허용</value>
+  </data>
+  <data name="rgvWorkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvWorkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvZipCodeResource1.ErrorMessage" xml:space="preserve">
+    <value>올바른 우편 번호를 입력하십시오.</value>
+  </data>
+  <data name="rgvZipCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvZipCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>암호는 최소 4 알파벳 3 자리 숫자 7 자 이상이어야합니다.</value>
+  </data>
+  <data name="rqvPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtColorResource1.ErrorMessage" xml:space="preserve">
+    <value>색상을 선택하세요</value>
+  </data>
+  <data name="rqvtxtColorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>확인 비밀번호를 입력하세요</value>
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtDoctorIDResource1.ErrorMessage" xml:space="preserve">
+    <value>의사 ID 입력 해주십시오</value>
+  </data>
+  <data name="rqvtxtDoctorIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtDoctorIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtEmailIdResource1.ErrorMessage" xml:space="preserve">
+    <value>이메일 ID를 입력하십시오</value>
+  </data>
+  <data name="rqvtxtEmailIdResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtEmailIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>이름을 입력 해주세요</value>
+  </data>
+  <data name="rqvtxtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>성 (이름)을 입력하세요</value>
+  </data>
+  <data name="rqvtxtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtMobileResource1.ErrorMessage" xml:space="preserve">
+    <value>휴대 전화 번호를 입력 해주세요</value>
+  </data>
+  <data name="rqvtxtMobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtMobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>비밀번호를 입력하세요</value>
+  </data>
+  <data name="rqvtxtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtUsernameResource1.ErrorMessage" xml:space="preserve">
+    <value>사용자 이름을 입력하십시오</value>
+  </data>
+  <data name="rqvtxtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rqvtxtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtColorResource1.Text" xml:space="preserve">
+    <value>#990000</value>
+  </data>
+  <data name="txtColorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCrossOrSchieldValueResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCrossOrSchieldValueResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDOBResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDOBResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDoctorNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDoctorNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDrugNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDrugNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailidResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailidResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txthomeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txthomeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicalNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicalNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicareResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMedicareResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMiResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtmobileResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtmobileResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNPINoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNPINoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOfficeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOfficeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSSNNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSSNNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStateIDNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStateIDNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStreetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTINNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTINNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtworkResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtworkResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtZipResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtZipResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>확인 비밀번호를 입력하세요</value>
+  </data>
+  <data name="URLhampered" xml:space="preserve">
+    <value>URL을 방해했다</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>4Clear Ortho - 편집 의사의 자세한 사항</value>
+  </data>
+  <data name="EditTitle" xml:space="preserve">
+    <value>4Clear Ortho - 편집 의사의 자세한 사항</value>
+  </data>
+  <data name="AddTitle" xml:space="preserve">
+    <value>4Clear Ortho - 세부 사항추가</value>
+  </data>
+  <data name="lblHeaderEditResource1.Text" xml:space="preserve">
+    <value>편집 닥터 세부 정보</value>
+  </data>
+  <data name="lblHeaderEditResource1.ToolTip" xml:space="preserve">
+    <value>편집 닥터 세부 정보</value>
+  </data>
+  <data name="cvUserNameResource1.ErrorMessage" xml:space="preserve">
+    <value>적어도 3 개의 알파벳 문자를 입력 해주십시오</value>
+  </data>
+  <data name="cvUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ErrorMessage" xml:space="preserve">
+    <value>확인 비밀번호를 입력하세요</value>
+  </data>
+  <data name="cvConfirmPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cvConfirmPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblShowPasswordResource1.Text" xml:space="preserve">
+    <value>암호 표시</value>
+  </data>
+  <data name="lblShowPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkPhotoChangeResource1.Text" xml:space="preserve">
+    <value>사진 변경</value>
+  </data>
+  <data name="lnkPhotoChangeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkRemovePhotoResource1.Text" xml:space="preserve">
+    <value>사진을 제거</value>
+  </data>
+  <data name="lnkRemovePhotoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>날짜 선택</value>
+  </data>
+  <data name="RemovePhotoMessage" xml:space="preserve">
+    <value>이 사진을 삭제 하시겠습니까?</value>
+  </data>
+  <data name="lblZoneResource.Text" xml:space="preserve">
+    <value>시간대 정보</value>
+  </data>
+  <data name="lblZoneSelectResource.Text" xml:space="preserve">
+    <value>시간대를 선택</value>
+  </data>
+  <data name="rqvddlZoneResource.ErrorMessage" xml:space="preserve">
+    <value>당신의 시간대를 선택하세요.</value>
+  </data>
+  <data name="lblDegreeResource.Text" xml:space="preserve">
+    <value>정도</value>
+  </data>
+  <data name="lblGenderResource.Text" xml:space="preserve">
+    <value>성별</value>
+  </data>
+  <data name="rbtnFemaleResource.Text" xml:space="preserve">
+    <value>여성</value>
+  </data>
+  <data name="rbtnMaleResource.Text" xml:space="preserve">
+    <value>남성</value>
+  </data>
+  <data name="AlreadySignedUp" xml:space="preserve">
+    <value>이미 가입 한 것 같습니다. 계정에 로그인합니다.</value>
+  </data>
+  <data name="ExistUserMessage" xml:space="preserve">
+    <value>우리는 발견 당신은 이미 우리의 상위 사이트 "4edental.com"의 구성원인지 주셔서 감사합니다. 4ClearOrtho에 액세스 할 수있는 등록 절차를 완료하십시오. 고맙습니다!!</value>
+  </data>
+</root>

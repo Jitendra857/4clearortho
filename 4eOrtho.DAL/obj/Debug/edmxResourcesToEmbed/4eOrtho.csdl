@@ -1,0 +1,2560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eDentalOrthoModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="OrthoEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="GetServerDateTime" ReturnType="Collection(DateTime)" />
+    <FunctionImport Name="GetProductMaster" ReturnType="Collection(eDentalOrthoModel.ProductMasterDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPageWithLevel" ReturnType="Collection(eDentalOrthoModel.PageWithLevel)">
+      <Parameter Name="LanguageID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPageWithDetail" ReturnType="Collection(eDentalOrthoModel.PageWithDetail)">
+      <Parameter Name="LanguageID" Mode="In" Type="Int32" />
+      <Parameter Name="PageID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetMenuPageWithLevel" ReturnType="Collection(eDentalOrthoModel.MenuPageWithLevel)">
+      <Parameter Name="LanguageID" Mode="In" Type="Int32" />
+      <Parameter Name="Role" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetPackageMaster" ReturnType="Collection(eDentalOrthoModel.PackageMasterDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllCountryDetail" ReturnType="Collection(eDentalOrthoModel.AllCountryDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllStateDetail" ReturnType="Collection(eDentalOrthoModel.AllStateDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllClientTestimonial" ReturnType="Collection(eDentalOrthoModel.AllClientTestimonial)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetProductPackageDetails" ReturnType="Collection(eDentalOrthoModel.ProductPackageDetails)">
+      <Parameter Name="PackageId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllRecommendedDentist" ReturnType="Collection(eDentalOrthoModel.AllRecommendedDentist)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllContactUsList" ReturnType="Collection(eDentalOrthoModel.AllContactUsList)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetEmailAndPasswordForLogin" ReturnType="Collection(eDentalOrthoModel.EmailAndPasswordForLogin)">
+      <Parameter Name="emailid" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="userType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetStateDetails" ReturnType="Collection(eDentalOrthoModel.StateDetails)" />
+    <FunctionImport Name="GetEmailAndPasswordForForGotPassword" ReturnType="Collection(eDentalOrthoModel.EmailAndPasswordForForGotPassword)">
+      <Parameter Name="emailid" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CreateAppointmentRequest">
+      <Parameter Name="PatientId" Mode="In" Type="Int64" />
+      <Parameter Name="PatientName" Mode="In" Type="String" />
+      <Parameter Name="PatientMobile" Mode="In" Type="String" />
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="AppointmentDate" Mode="In" Type="DateTime" />
+      <Parameter Name="PreferedTime" Mode="In" Type="DateTime" />
+      <Parameter Name="Duration" Mode="In" Type="String" />
+      <Parameter Name="DoctorId" Mode="In" Type="Int64" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int64" />
+      <Parameter Name="CreatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="LastUpdatedBy" Mode="In" Type="Int64" />
+      <Parameter Name="LastUpdatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DatabaseName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllGallleryDetail" ReturnType="Collection(eDentalOrthoModel.AllGallleryDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="CreatedBy" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllSupplyOrder" ReturnType="Collection(eDentalOrthoModel.SupplyOrderDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllSupplyOrderAdmin" ReturnType="Collection(eDentalOrthoModel.AllSupplyOrderAdmin)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetDoctorBecomeProviderStatus" ReturnType="Collection(eDentalOrthoModel.DoctorBecomeProviderStatus)">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetStudentDetails" ReturnType="Collection(eDentalOrthoModel.StudentDetails)">
+      <Parameter Name="EmailID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateStudentDetails">
+      <Parameter Name="EmailID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetTakeCourseDetails" ReturnType="Collection(eDentalOrthoModel.TakeCourseDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetDomainDoctorDetailsByEmail" ReturnType="Collection(eDentalOrthoModel.DomainDoctorDetailsByEmail)">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetDomainPatientByEmail" ReturnType="Collection(eDentalOrthoModel.DomainPatientByEmail)">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetPackageDetails" ReturnType="Collection(eDentalOrthoModel.PackageDetails)">
+      <Parameter Name="PackageId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllPatientGallleryDetail" ReturnType="Collection(eDentalOrthoModel.AllPatientGallleryDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="CreatedBy" Mode="In" Type="String" />
+      <Parameter Name="ListBy" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="BecomeProviders" EntityType="eDentalOrthoModel.BecomeProvider" />
+    <EntitySet Name="ClientTestimonials" EntityType="eDentalOrthoModel.ClientTestimonial" />
+    <EntitySet Name="ContactUs" EntityType="eDentalOrthoModel.ContactU" />
+    <EntitySet Name="Countries" EntityType="eDentalOrthoModel.Country" />
+    <EntitySet Name="Galleries" EntityType="eDentalOrthoModel.Gallery" />
+    <EntitySet Name="Languages" EntityType="eDentalOrthoModel.Language" />
+    <EntitySet Name="LookupMasters" EntityType="eDentalOrthoModel.LookupMaster" />
+    <EntitySet Name="LookupTypeMasters" EntityType="eDentalOrthoModel.LookupTypeMaster" />
+    <EntitySet Name="PackageGalleries" EntityType="eDentalOrthoModel.PackageGallery" />
+    <EntitySet Name="PackageMasters" EntityType="eDentalOrthoModel.PackageMaster" />
+    <EntitySet Name="PageDetails" EntityType="eDentalOrthoModel.PageDetail" />
+    <EntitySet Name="Pages" EntityType="eDentalOrthoModel.Page" />
+    <EntitySet Name="ProductGalleries" EntityType="eDentalOrthoModel.ProductGallery" />
+    <EntitySet Name="ProductMasters" EntityType="eDentalOrthoModel.ProductMaster" />
+    <EntitySet Name="ProductPackageMasters" EntityType="eDentalOrthoModel.ProductPackageMaster" />
+    <EntitySet Name="RecommendDentists" EntityType="eDentalOrthoModel.RecommendDentist" />
+    <EntitySet Name="States" EntityType="eDentalOrthoModel.State" />
+    <EntitySet Name="SupplyOrders" EntityType="eDentalOrthoModel.SupplyOrder" />
+    <EntitySet Name="TakeCourses" EntityType="eDentalOrthoModel.TakeCourse" />
+    <AssociationSet Name="FK_State_Country" Association="eDentalOrthoModel.FK_State_Country">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="State" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LookupMaster_LookupMaster" Association="eDentalOrthoModel.FK_LookupMaster_LookupMaster">
+      <End Role="LookupMaster" EntitySet="LookupMasters" />
+      <End Role="LookupMaster1" EntitySet="LookupMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PackageGallery_PackageMaster" Association="eDentalOrthoModel.FK_PackageGallery_PackageMaster">
+      <End Role="PackageMaster" EntitySet="PackageMasters" />
+      <End Role="PackageGallery" EntitySet="PackageGalleries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductGallery_ProductMaster" Association="eDentalOrthoModel.FK_ProductGallery_ProductMaster">
+      <End Role="ProductMaster" EntitySet="ProductMasters" />
+      <End Role="ProductGallery" EntitySet="ProductGalleries" />
+    </AssociationSet>
+    <EntitySet Name="DoctorRatings" EntityType="eDentalOrthoModel.DoctorRating" />
+    <FunctionImport Name="GetAllDoctorDetailsByEmailId" ReturnType="Collection(eDentalOrthoModel.AllDoctorDetailsByEmailId)">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="DoctorRatingDetails" EntityType="eDentalOrthoModel.DoctorRatingDetail" />
+    <AssociationSet Name="FK_RatingDetails_DoctorRating" Association="eDentalOrthoModel.FK_RatingDetails_DoctorRating">
+      <End Role="DoctorRating" EntitySet="DoctorRatings" />
+      <End Role="DoctorRatingDetail" EntitySet="DoctorRatingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatingDetails_RatingDetails" Association="eDentalOrthoModel.FK_RatingDetails_RatingDetails">
+      <End Role="LookupMaster" EntitySet="LookupMasters" />
+      <End Role="DoctorRatingDetail" EntitySet="DoctorRatingDetails" />
+    </AssociationSet>
+    <FunctionImport Name="GetLookUpDetailsByLookupType" ReturnType="Collection(eDentalOrthoModel.LookUpDetailsByLookupType)">
+      <Parameter Name="LookUpType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetDoctorRatingDetailsByDoctorEmail" ReturnType="Collection(eDentalOrthoModel.DoctorRatingDetailsByDoctorEmail)">
+      <Parameter Name="DocotorEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetDoctorRatingDetailsByPatientEmail" ReturnType="Collection(eDentalOrthoModel.DoctorRatingDetailsByPatientEmail)">
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteDoctorRatingByPatientEmail">
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="DoctorRatingId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllPatientReviewByDoctorEmail" ReturnType="Collection(eDentalOrthoModel.AllPatientReviewByDoctorEmail)">
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="AppointmentRequests" EntityType="eDentalOrthoModel.AppointmentRequest" />
+    <EntitySet Name="Reviews" EntityType="eDentalOrthoModel.Review" />
+    <FunctionImport Name="GetReviewByReviewId" ReturnType="Collection(eDentalOrthoModel.ReviewByReviewId)">
+      <Parameter Name="ReviewId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetCertifiedDoctorDetailsByFilterType" ReturnType="Collection(eDentalOrthoModel.CertifiedDoctorDetailsByFilterType)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="IsAllCourse" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="GetPatientDetails" ReturnType="Collection(eDentalOrthoModel.PatientDetails)" />
+    <FunctionImport Name="GetNonCertifiedDoctorDetailsByFilterType" ReturnType="Collection(eDentalOrthoModel.NonCertifiedDoctorDetailsByFilterType)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="IsAllCourse" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <EntitySet Name="PatientGalleries" EntityType="eDentalOrthoModel.PatientGallery" />
+    <FunctionImport Name="GetPatientGalleryDetails" ReturnType="Collection(eDentalOrthoModel.PatientGalleryDetails)">
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PatientBrochures" EntityType="eDentalOrthoModel.PatientBrochure" />
+    <FunctionImport Name="GetAllReviewDetail" ReturnType="Collection(eDentalOrthoModel.AllReviewDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+      <Parameter Name="UserType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetBecomeProviderDetails" ReturnType="Collection(eDentalOrthoModel.BecomeProviderDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="NewCases" EntityType="eDentalOrthoModel.NewCase" />
+    <FunctionImport Name="GetNewCaseDetails" ReturnType="Collection(eDentalOrthoModel.NewCaseDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+      <Parameter Name="IsCompleted" Mode="In" Type="Boolean" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllDoctorByNewCase" ReturnType="Collection(eDentalOrthoModel.AllDoctorByNewCase)" />
+    <FunctionImport Name="InsertPatientToUserDomain">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int64" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="SourceId" Mode="In" Type="Int64" />
+      <Parameter Name="IsUpdate" Mode="In" Type="Boolean" />
+      <Parameter Name="RoleType" Mode="In" Type="String" />
+      <Parameter Name="DomainURL" Mode="In" Type="String" />
+      <Parameter Name="SourceType" Mode="In" Type="String" />
+      <Parameter Name="DatabaseName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetPatientListByDoctorEmail" ReturnType="Collection(eDentalOrthoModel.PatientListByDoctorEmail)">
+      <Parameter Name="EmailID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetPatientRegistrationDetailForMail" ReturnType="Collection(eDentalOrthoModel.PatientRegistrationDetailForMail)">
+      <Parameter Name="PatientId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="GetPatientCaseEmailDetail" ReturnType="Collection(eDentalOrthoModel.PatientCaseEmailDetail)">
+      <Parameter Name="CaseId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="TrackCases" EntityType="eDentalOrthoModel.TrackCase" />
+    <FunctionImport Name="GetTrackCaseListDetails" ReturnType="Collection(eDentalOrthoModel.TrackCaseListDetails)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetCaseAndTrackDetailForSA" ReturnType="Collection(eDentalOrthoModel.CaseAndTrackDetailForSA)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="IsDiscounted" Mode="In" Type="Boolean" />
+      <Parameter Name="IsCompleted" Mode="In" Type="Boolean" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetTrackEmailDetails" ReturnType="Collection(eDentalOrthoModel.TrackEmailDetails)">
+      <Parameter Name="TrackId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="AddressMasters" EntityType="eDentalOrthoModel.AddressMaster" />
+    <EntitySet Name="ContactMasters" EntityType="eDentalOrthoModel.ContactMaster" />
+    <EntitySet Name="WSB_UserDomainMaster" EntityType="eDentalOrthoModel.WSB_UserDomainMaster" />
+    <EntitySet Name="MailLogs" EntityType="eDentalOrthoModel.MailLog" />
+    <EntitySet Name="DoctorGalleryMappings" EntityType="eDentalOrthoModel.DoctorGalleryMapping" />
+    <FunctionImport Name="GetUserDetail" ReturnType="Collection(eDentalOrthoModel.GetUserDetail)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchType" Mode="In" Type="String" />
+      <Parameter Name="SearchText" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetGallleryDetailForDoctor" ReturnType="Collection(eDentalOrthoModel.GetGallleryDetailForDoctor)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="ConditionGalleries" EntityType="eDentalOrthoModel.ConditionGallery" />
+    <AssociationSet Name="FK_ConditionGallery_Gallery" Association="eDentalOrthoModel.FK_ConditionGallery_Gallery">
+      <End Role="Gallery" EntitySet="Galleries" />
+      <End Role="ConditionGallery" EntitySet="ConditionGalleries" />
+    </AssociationSet>
+    <FunctionImport Name="GetPatientDoctorGallery" ReturnType="Collection(eDentalOrthoModel.GetPatientDoctorGallery)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+      <Parameter Name="IsTemplate" Mode="In" Type="Boolean" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SubscribeAADStudent">
+      <Parameter Name="EmailID" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="MI" Mode="In" Type="String" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+      <Parameter Name="MaritalStatus" Mode="In" Type="String" />
+      <Parameter Name="HomeContact" Mode="In" Type="String" />
+      <Parameter Name="Mobile" Mode="In" Type="String" />
+      <Parameter Name="WorkContact" Mode="In" Type="String" />
+      <Parameter Name="CountryId" Mode="In" Type="Int64" />
+      <Parameter Name="StateId" Mode="In" Type="Int64" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Street" Mode="In" Type="String" />
+      <Parameter Name="ZipCode" Mode="In" Type="String" />
+      <Parameter Name="StudentID" Mode="InOut" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="WSB_Country" EntityType="eDentalOrthoModel.WSB_Country" />
+    <EntitySet Name="WSB_State" EntityType="eDentalOrthoModel.WSB_State" />
+    <EntitySet Name="PatientGalleryMasters" EntityType="eDentalOrthoModel.PatientGalleryMaster" />
+    <AssociationSet Name="FK_PatientGallery_PatientGalleryMaster" Association="eDentalOrthoModel.FK_PatientGallery_PatientGalleryMaster">
+      <End Role="PatientGalleryMaster" EntitySet="PatientGalleryMasters" />
+      <End Role="PatientGallery" EntitySet="PatientGalleries" />
+    </AssociationSet>
+    <FunctionImport Name="GetEightImageTemplate" ReturnType="Collection(eDentalOrthoModel.GetEightImageTemplate)">
+      <Parameter Name="PatientEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllCaseWithDiscounted" ReturnType="Collection(eDentalOrthoModel.GetAllCaseWithDiscounted)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmail" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="UserConfigs" EntityType="eDentalOrthoModel.UserConfig" />
+    <FunctionImport Name="usp_GetAllErrorlog" ReturnType="Collection(eDentalOrthoModel.usp_GetAllErrorlog_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="GenericLogs" EntityType="eDentalOrthoModel.GenericLog" />
+    <FunctionImport Name="usp_Admin_GetAllTrackHistory" ReturnType="Collection(eDentalOrthoModel.usp_Admin_GetAllTrackHistory_Result)">
+      <Parameter Name="TrackNo" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PaymentFailures" EntityType="eDentalOrthoModel.PaymentFailure" />
+    <EntitySet Name="Users" EntityType="eDentalOrthoModel.User" />
+    <FunctionImport Name="GetAllLocalContacts" ReturnType="Collection(eDentalOrthoModel.GetAllLocalContacts)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllOrthoCharges" ReturnType="Collection(eDentalOrthoModel.GetAllOrthoCharges)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="DiscountMasters" EntityType="eDentalOrthoModel.DiscountMaster" />
+    <FunctionImport Name="GetAllCaseCharges" ReturnType="Collection(eDentalOrthoModel.GetAllCaseCharges)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="LocalContacts" EntityType="eDentalOrthoModel.LocalContact" />
+    <AssociationSet Name="FK_LocalContact_AddressMaster" Association="eDentalOrthoModel.FK_LocalContact_AddressMaster">
+      <End Role="AddressMaster" EntitySet="AddressMasters" />
+      <End Role="LocalContact" EntitySet="LocalContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LocalContact_ContactMaster" Association="eDentalOrthoModel.FK_LocalContact_ContactMaster">
+      <End Role="ContactMaster" EntitySet="ContactMasters" />
+      <End Role="LocalContact" EntitySet="LocalContacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LocalContact_User" Association="eDentalOrthoModel.FK_LocalContact_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="LocalContact" EntitySet="LocalContacts" />
+    </AssociationSet>
+    <EntitySet Name="OrthoCharges" EntityType="eDentalOrthoModel.OrthoCharge" />
+    <FunctionImport Name="GetAllPatientOrDoctor" ReturnType="Collection(eDentalOrthoModel.GetAllPatientOrDoctor)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="Type" Mode="In" Type="String" />
+      <Parameter Name="DoctorEmailId" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllCourceForAdmin" ReturnType="Collection(eDentalOrthoModel.GetAllCourceForAdmin)" />
+    <FunctionImport Name="GetAllSubCourceForAdmin" ReturnType="Collection(eDentalOrthoModel.GetAllSubCourceForAdmin)">
+      <Parameter Name="Id" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="PatientCaseDetails" EntityType="eDentalOrthoModel.PatientCaseDetail" />
+    <AssociationSet Name="FK_PatientCaseDetail_PatientCaseDetail" Association="eDentalOrthoModel.FK_PatientCaseDetail_PatientCaseDetail">
+      <End Role="PatientCaseDetail" EntitySet="PatientCaseDetails" />
+      <End Role="PatientCaseDetail1" EntitySet="PatientCaseDetails" />
+    </AssociationSet>
+    <FunctionImport Name="GetCaseType" ReturnType="Collection(eDentalOrthoModel.GetCaseType)">
+      <Parameter Name="LookUpType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetDoctorListFromOrthoAndAAAD" ReturnType="Collection(eDentalOrthoModel.GetDoctorListFromOrthoAndAAAD_Result)" />
+    <EntitySet Name="CaseCharges" EntityType="eDentalOrthoModel.CaseCharge" />
+    <AssociationSet Name="FK_CaseCharges_DiscountMaster" Association="eDentalOrthoModel.FK_CaseCharges_DiscountMaster">
+      <End Role="DiscountMaster" EntitySet="DiscountMasters" />
+      <End Role="CaseCharge" EntitySet="CaseCharges" />
+    </AssociationSet>
+    <FunctionImport Name="GetAllCashPaymentRecoredForPatientCase" ReturnType="Collection(eDentalOrthoModel.GetAllCashPaymentRecoredForPatientCase_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllOrthoDoctor" ReturnType="Collection(eDentalOrthoModel.GetAllOrthoDoctor_Result)" />
+    <EntitySet Name="PaymentSuccesses" EntityType="eDentalOrthoModel.PaymentSuccess" />
+    <EntitySet Name="Stages" EntityType="eDentalOrthoModel.Stage" />
+    <EntitySet Name="StageMasters" EntityType="eDentalOrthoModel.StageMaster" />
+    <EntitySet Name="GetAllDoctors" EntityType="eDentalOrthoModel.GetAllDoctor" />
+    <EntitySet Name="PageDetailWithLanguages" EntityType="eDentalOrthoModel.PageDetailWithLanguage" />
+    <EntitySet Name="Patients" EntityType="eDentalOrthoModel.Patient" />
+    <AssociationSet Name="FK_PatientCaseDetail_Patient" Association="eDentalOrthoModel.FK_PatientCaseDetail_Patient">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="PatientCaseDetail" EntitySet="PatientCaseDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stage_Patient" Association="eDentalOrthoModel.FK_Stage_Patient">
+      <End Role="Patient" EntitySet="Patients" />
+      <End Role="Stage" EntitySet="Stages" />
+    </AssociationSet>
+    <EntitySet Name="Doctors" EntityType="eDentalOrthoModel.Doctor" />
+    <AssociationSet Name="FK_Doctor_AddressMaster" Association="eDentalOrthoModel.FK_Doctor_AddressMaster">
+      <End Role="AddressMaster" EntitySet="AddressMasters" />
+      <End Role="Doctor" EntitySet="Doctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doctor_ContactMaster" Association="eDentalOrthoModel.FK_Doctor_ContactMaster">
+      <End Role="ContactMaster" EntitySet="ContactMasters" />
+      <End Role="Doctor" EntitySet="Doctors" />
+    </AssociationSet>
+    <FunctionImport Name="GetCaseAndTrackDetailForSA1" ReturnType="Collection(eDentalOrthoModel.GetCaseAndTrackDetailForSA1_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="IsDiscounted" Mode="In" Type="Boolean" />
+      <Parameter Name="IsCompleted" Mode="In" Type="Boolean" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetCaseAndTrackDetailForSA_Test" ReturnType="Collection(eDentalOrthoModel.GetCaseAndTrackDetailForSA_Test_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchField" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="IsDiscounted" Mode="In" Type="Boolean" />
+      <Parameter Name="IsCompleted" Mode="In" Type="Boolean" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetPatientStagePaymentReport" ReturnType="Collection(eDentalOrthoModel.GetPatientStagePaymentReport_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="SortBy" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="TotalRecCount" Mode="InOut" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="CaseGalleries" EntityType="eDentalOrthoModel.CaseGallery" />
+  </EntityContainer>
+  <ComplexType Name="ProductMasterDetails">
+    <Property Type="Int64" Name="ProductID" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="ProductDescription" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="PageWithLevel">
+    <Property Type="Int64" Name="PageID" Nullable="false" />
+    <Property Type="Int64" Name="ParentID" Nullable="true" />
+    <Property Type="Int32" Name="DisplayOrder" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Boolean" Name="RequiredAuthentication" Nullable="false" />
+    <Property Type="String" Name="MenuItem" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="URLName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PageTitle" Nullable="true" MaxLength="250" />
+    <Property Type="Int64" Name="PageDetailID" Nullable="false" />
+    <Property Type="Int32" Name="LanguageID" Nullable="true" />
+    <Property Type="String" Name="Role" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Level" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PageWithDetail">
+    <Property Type="Int64" Name="PageId" Nullable="false" />
+    <Property Type="String" Name="PageTitle" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="URLName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PageKeyword" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="PageContent" Nullable="true" />
+    <Property Type="String" Name="PageMetaDescription" Nullable="true" />
+    <Property Type="String" Name="Role" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="MenuPageWithLevel">
+    <Property Type="Int64" Name="PageID" Nullable="false" />
+    <Property Type="Int64" Name="ParentID" Nullable="true" />
+    <Property Type="Int32" Name="DisplayOrder" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Boolean" Name="RequiredAuthentication" Nullable="false" />
+    <Property Type="String" Name="MenuItem" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="URLName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PageTitle" Nullable="true" MaxLength="250" />
+    <Property Type="Int64" Name="PageDetailID" Nullable="false" />
+    <Property Type="Int32" Name="LanguageID" Nullable="true" />
+    <Property Type="String" Name="Role" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Level" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PackageMasterDetails">
+    <Property Type="Int64" Name="PackageId" Nullable="false" />
+    <Property Type="String" Name="PackageName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PackageDescription" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsCase" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AllCountryDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int32" Name="CountryId" Nullable="false" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AllStateDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="CountryId" Nullable="false" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="500" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="StateId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AllClientTestimonial">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="ClientTestimonialId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="41" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PageContent" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="UserType" Nullable="true" MaxLength="1" />
+  </ComplexType>
+  <ComplexType Name="ProductPackageDetails">
+    <Property Type="Guid" Name="RowId" Nullable="true" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="AllRecommendedDentist">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="RecommendId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="250" />
+    <Property Type="Int64" Name="PatientId" Nullable="true" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="AllContactUsList">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="ContactId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Subject" Nullable="true" />
+    <Property Type="Boolean" Name="Isactive" Nullable="true" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+    <Property Type="Boolean" Name="IsResponded" Nullable="true" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="EmailAndPasswordForLogin">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="EmailID" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="RoleType" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="DomainURL" Nullable="false" MaxLength="1" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="PatientName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="Mobile" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="DoctorFirstName" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DoctorLastName" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DoctorMobile" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DoctorStreet" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="StateName" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SourceType" Nullable="false" MaxLength="5" />
+    <Property Type="Int64" Name="SourceId" Nullable="false" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ZipCode" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CertiType" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" Precision="23" />
+    <Property Type="String" Name="HomeContact" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="WorkContact" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="CountryId" Nullable="false" />
+    <Property Type="Int32" Name="StateId" Nullable="false" />
+    <Property Type="String" Name="MI" Nullable="false" MaxLength="1" />
+    <Property Type="Boolean" Name="IsPayment" Nullable="true" />
+    <Property Type="Boolean" Name="IsAccActive" Nullable="true" />
+    <Property Type="String" Name="DatabaseName" Nullable="false" MaxLength="11" />
+    <Property Type="Int64" Name="UserId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="StateDetails">
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="EmailAndPasswordForForGotPassword">
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="RoleType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DomainURL" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="DomainDoctorDetails">
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="AllGallleryDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Boolean" Name="IsHomeDisplay" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+    <Property Type="String" Name="Condition" Nullable="false" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="SupplyOrderDetails">
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="String" Name="SupplyName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDispatch" Nullable="false" />
+    <Property Type="Boolean" Name="IsRecieved" Nullable="true" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Boolean" Name="IsCase" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="AllSupplyOrderAdmin">
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="String" Name="SupplyName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDispatch" Nullable="false" />
+    <Property Type="Boolean" Name="IsRecieved" Nullable="true" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="OrdererName" Nullable="true" MaxLength="101" />
+    <Property Type="Boolean" Name="IsCase" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DoctorBecomeProviderStatus">
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="StudentDetails">
+    <Property Type="Int64" Name="StudentID" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MI" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="DOB" Nullable="true" Precision="23" />
+    <Property Type="String" Name="MaritalStatus" Nullable="true" MaxLength="1" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+    <Property Type="Int64" Name="AddressID" Nullable="false" />
+    <Property Type="Int64" Name="ContactID" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="LastUpdateBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="String" Name="PhotographerName" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="CourseCategoryId" Nullable="true" />
+    <Property Type="Int64" Name="StudentTestId" Nullable="true" />
+    <Property Type="String" Name="TestStatus" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="TakeCourseDetails">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="DomainDoctorDetailsByEmail">
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="HomeContact" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="WorkContact" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="DomainPatientByEmail">
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="UserId" Nullable="true" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="HomeContact" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="WorkContact" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="DOB" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="PackageDetails">
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="PackageId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="AllPatientGallleryDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="PatientGalleryId" Nullable="false" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="500" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Treatment" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="AfterId" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <EntityType Name="BecomeProvider">
+    <Key>
+      <PropertyRef Name="BecomeProviderId" />
+    </Key>
+    <Property Type="Int64" Name="BecomeProviderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DoctorId" Nullable="false" />
+    <Property Type="Boolean" Name="IsSubscribe" Nullable="false" />
+    <Property Type="Boolean" Name="IsRegistered" Nullable="false" />
+    <Property Type="Boolean" Name="IsProvider" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdateBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ClientTestimonial">
+    <Key>
+      <PropertyRef Name="ClientTestimonialId" />
+    </Key>
+    <Property Type="Int64" Name="ClientTestimonialId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="PageContent" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastName" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Boolean" Name="IsDelete" />
+    <Property Type="String" Name="UserType" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="UserEmail" MaxLength="450" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ContactU">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Type="Int64" Name="ContactId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StateId" />
+    <Property Type="Int64" Name="CountryId" />
+    <Property Type="String" Name="MailStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" />
+    <Property Type="String" Name="Mobile" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Subject" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Isactive" />
+    <Property Type="Boolean" Name="IsResponded" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+    </Key>
+    <Property Type="Int64" Name="CountryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="States" Relationship="eDentalOrthoModel.FK_State_Country" FromRole="Country" ToRole="State" />
+  </EntityType>
+  <EntityType Name="Gallery">
+    <Key>
+      <PropertyRef Name="GalleryId" />
+    </Key>
+    <Property Type="Int64" Name="GalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Condition" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsHomeDisplay" Nullable="false" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <NavigationProperty Name="ConditionGalleries" Relationship="eDentalOrthoModel.FK_ConditionGallery_Gallery" FromRole="Gallery" ToRole="ConditionGallery" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="LanguageID" />
+    </Key>
+    <Property Type="Int32" Name="LanguageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="LanguageName" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LanguageShortCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LanguageCultureCode" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DisplayOrder" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="LookupMaster">
+    <Key>
+      <PropertyRef Name="LookupId" />
+    </Key>
+    <Property Type="Int64" Name="LookupId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LookupDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="LookupTypeId" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="LookupMaster1" Relationship="eDentalOrthoModel.FK_LookupMaster_LookupMaster" FromRole="LookupMaster" ToRole="LookupMaster1" />
+    <NavigationProperty Name="LookupMaster2" Relationship="eDentalOrthoModel.FK_LookupMaster_LookupMaster" FromRole="LookupMaster1" ToRole="LookupMaster" />
+    <NavigationProperty Name="DoctorRatingDetails" Relationship="eDentalOrthoModel.FK_RatingDetails_RatingDetails" FromRole="LookupMaster" ToRole="DoctorRatingDetail" />
+  </EntityType>
+  <EntityType Name="LookupTypeMaster">
+    <Key>
+      <PropertyRef Name="LookupTypeId" />
+    </Key>
+    <Property Type="Int64" Name="LookupTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="LookupType" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LookupTypeDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PackageGallery">
+    <Key>
+      <PropertyRef Name="PackageGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="PackageGalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PackageId" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <NavigationProperty Name="PackageMaster" Relationship="eDentalOrthoModel.FK_PackageGallery_PackageMaster" FromRole="PackageGallery" ToRole="PackageMaster" />
+  </EntityType>
+  <EntityType Name="PackageMaster">
+    <Key>
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Type="Int64" Name="PackageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="PackageName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PackageDescription" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="PackageGalleries" Relationship="eDentalOrthoModel.FK_PackageGallery_PackageMaster" FromRole="PackageMaster" ToRole="PackageGallery" />
+    <Property Type="Boolean" Name="IsCase" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PageDetail">
+    <Key>
+      <PropertyRef Name="PageDetailID" />
+    </Key>
+    <Property Type="Int64" Name="PageDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PageID" />
+    <Property Type="String" Name="MenuItem" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageTitle" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageContent" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageKeyword" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LanguageID" />
+    <Property Type="String" Name="PageMetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="String" Name="URLName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Role" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Page">
+    <Key>
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Type="Int64" Name="PageID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ParentID" />
+    <Property Type="Int32" Name="DisplayOrder" Nullable="false" />
+    <Property Type="Boolean" Name="Status" Nullable="false" />
+    <Property Type="Boolean" Name="RequiredAuthentication" Nullable="false" />
+    <Property Type="Int32" Name="LanguageID" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" />
+    <Property Type="Boolean" Name="IsActive" />
+  </EntityType>
+  <EntityType Name="ProductGallery">
+    <Key>
+      <PropertyRef Name="ProductGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="ProductGalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <NavigationProperty Name="ProductMaster" Relationship="eDentalOrthoModel.FK_ProductGallery_ProductMaster" FromRole="ProductGallery" ToRole="ProductMaster" />
+  </EntityType>
+  <EntityType Name="ProductMaster">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Type="Int64" Name="ProductId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductDescription" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="ProductGalleries" Relationship="eDentalOrthoModel.FK_ProductGallery_ProductMaster" FromRole="ProductMaster" ToRole="ProductGallery" />
+  </EntityType>
+  <EntityType Name="ProductPackageMaster">
+    <Key>
+      <PropertyRef Name="ProductPackageId" />
+    </Key>
+    <Property Type="Int64" Name="ProductPackageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ProductId" />
+    <Property Type="Int64" Name="PackageId" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RecommendDentist">
+    <Key>
+      <PropertyRef Name="RecommendId" />
+    </Key>
+    <Property Type="Int64" Name="RecommendId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="StateId" Nullable="false" />
+    <Property Type="Int64" Name="CountryId" Nullable="false" />
+    <Property Type="Int64" Name="PatientId" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Boolean" Name="IsDelete" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="StateId" />
+    </Key>
+    <Property Type="Int64" Name="StateId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="StateName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CountryId" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="eDentalOrthoModel.FK_State_Country" FromRole="State" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="SupplyOrder">
+    <Key>
+      <PropertyRef Name="SupplyOrderId" />
+    </Key>
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="Int64" Name="PackageId" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="TotalAmount" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="DoctorId" />
+    <Property Type="String" Name="EmailId" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDispatch" Nullable="false" />
+    <Property Type="Boolean" Name="IsRecieved" />
+    <Property Type="String" Name="Remarks" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TakeCourse">
+    <Key>
+      <PropertyRef Name="TakeCourseId" />
+    </Key>
+    <Property Type="Int64" Name="TakeCourseId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsSubscribe" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdateBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdateDate" Nullable="false" Precision="3" />
+  </EntityType>
+  <Association Name="FK_State_Country">
+    <End Type="eDentalOrthoModel.Country" Role="Country" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.State" Role="State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="CountryId" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LookupMaster_LookupMaster">
+    <End Type="eDentalOrthoModel.LookupMaster" Role="LookupMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.LookupMaster" Role="LookupMaster1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="LookupMaster">
+        <PropertyRef Name="LookupId" />
+      </Principal>
+      <Dependent Role="LookupMaster1">
+        <PropertyRef Name="LookupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PackageGallery_PackageMaster">
+    <End Type="eDentalOrthoModel.PackageMaster" Role="PackageMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.PackageGallery" Role="PackageGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PackageMaster">
+        <PropertyRef Name="PackageId" />
+      </Principal>
+      <Dependent Role="PackageGallery">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductGallery_ProductMaster">
+    <End Type="eDentalOrthoModel.ProductMaster" Role="ProductMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.ProductGallery" Role="ProductGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductMaster">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="ProductGallery">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DoctorRating">
+    <Key>
+      <PropertyRef Name="DoctorRatingId" />
+    </Key>
+    <Property Type="Int64" Name="DoctorRatingId" Nullable="false" />
+    <Property Type="String" Name="DoctorEmail" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AverageRating" Precision="18" Scale="2" />
+    <Property Type="String" Name="PatientEmail" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="DoctorRatingDetails" Relationship="eDentalOrthoModel.FK_RatingDetails_DoctorRating" FromRole="DoctorRating" ToRole="DoctorRatingDetail" />
+  </EntityType>
+  <ComplexType Name="AllDoctorDetailsByEmailId">
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="street" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="zipcode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="Is4eOrthoPass" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SourceType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="DoctorId" Nullable="false" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="StateId" Nullable="true" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DataBaseName" Nullable="true" MaxLength="450" />
+    <Property Type="String" Name="PhotographName" Nullable="true" />
+    <Property Type="String" Name="DomainURL" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Degree" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Speciality" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="MI" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Title" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="SSNNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="StateIDNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="TinNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="MedicalNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="DrugIdNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="NPINo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="CrossShieldValue" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="IsCross" Nullable="true" />
+    <Property Type="String" Name="ProvNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="OfficeNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="MedicareNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="OtherIdNo" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="DoctorNo" Nullable="false" MaxLength="15" />
+    <Property Type="DateTime" Name="DOB" Nullable="true" Precision="23" />
+  </ComplexType>
+  <EntityType Name="DoctorRatingDetail">
+    <Key>
+      <PropertyRef Name="RatingDetailsId" />
+    </Key>
+    <Property Type="Int64" Name="RatingDetailsId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="DoctorRatingId" Nullable="false" />
+    <Property Type="Int64" Name="LookupId" Nullable="false" />
+    <Property Type="Decimal" Name="Rate" Precision="18" Scale="1" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="DoctorRating" Relationship="eDentalOrthoModel.FK_RatingDetails_DoctorRating" FromRole="DoctorRatingDetail" ToRole="DoctorRating" />
+    <NavigationProperty Name="LookupMaster" Relationship="eDentalOrthoModel.FK_RatingDetails_RatingDetails" FromRole="DoctorRatingDetail" ToRole="LookupMaster" />
+  </EntityType>
+  <Association Name="FK_RatingDetails_DoctorRating">
+    <End Type="eDentalOrthoModel.DoctorRating" Role="DoctorRating" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.DoctorRatingDetail" Role="DoctorRatingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DoctorRating">
+        <PropertyRef Name="DoctorRatingId" />
+      </Principal>
+      <Dependent Role="DoctorRatingDetail">
+        <PropertyRef Name="DoctorRatingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatingDetails_RatingDetails">
+    <End Type="eDentalOrthoModel.LookupMaster" Role="LookupMaster" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="eDentalOrthoModel.DoctorRatingDetail" Role="DoctorRatingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LookupMaster">
+        <PropertyRef Name="LookupId" />
+      </Principal>
+      <Dependent Role="DoctorRatingDetail">
+        <PropertyRef Name="LookupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="LookUpDetailsByLookupType">
+    <Property Type="Int64" Name="LookupId" Nullable="false" />
+    <Property Type="Int64" Name="LookupTypeId" Nullable="false" />
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="LookupDescription" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DoctorRatingDetailsByDoctorEmail">
+    <Property Type="Decimal" Name="Ease_of_scheduling_urgent_appointments" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Office_environment__cleanliness__comfort__etc_" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Staff_friendliness_and_courteousness" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total_wait_time__waiting___exam_rooms_" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Level_of_trust_in_provider_s_decisions" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="How_well_provider_explains_medical_condition_s_" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="How_well_provider_listens_and_answers_questions" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Spends_appropriate_amount_of_time_with_patients" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="DoctorRatingDetailsByPatientEmail">
+    <Property Type="Int64" Name="RatingDetailsId" Nullable="false" />
+    <Property Type="Int64" Name="LookupId" Nullable="false" />
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="PatientEmail" Nullable="true" MaxLength="450" />
+    <Property Type="String" Name="DoctorEmail" Nullable="true" MaxLength="450" />
+    <Property Type="Int64" Name="DoctorRatingId" Nullable="false" />
+    <Property Type="Decimal" Name="Rate" Nullable="true" Precision="18" Scale="1" />
+  </ComplexType>
+  <ComplexType Name="AllPatientReviewByDoctorEmail">
+    <Property Type="String" Name="ReviewContent" Nullable="false" />
+    <Property Type="Int64" Name="ReviewId" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="101" />
+  </ComplexType>
+  <EntityType Name="AppointmentRequest">
+    <Key>
+      <PropertyRef Name="AppointmentRequestId" />
+    </Key>
+    <Property Type="Int64" Name="AppointmentRequestId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PatientId" />
+    <Property Type="String" Name="PatientName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PatientMobile" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PatientEmail" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="AppointmentDate" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="PreferedTime" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Duration" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="DoctorId" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsBooked" Nullable="false" />
+    <Property Type="Int64" Name="AppointmentId" />
+    <Property Type="Boolean" Name="IsRegisterPatient" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsPurge" />
+    <Property Type="String" Name="DoctorEmail" MaxLength="450" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Review">
+    <Key>
+      <PropertyRef Name="ReviewId" />
+    </Key>
+    <Property Type="Int64" Name="ReviewId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ReviewContent" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PatientEmail" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="ReviewByReviewId">
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="ReviewId" Nullable="false" />
+    <Property Type="String" Name="ReviewContent" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="PatientEmail" Nullable="false" MaxLength="450" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="450" />
+  </ComplexType>
+  <ComplexType Name="CertifiedDoctorDetailsByFilterType">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="DoctorId" Nullable="false" />
+    <Property Type="String" Name="Street" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ZipCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="StateId" Nullable="true" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="Is4eOrthoPass" Nullable="true" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DataBaseName" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PhotographerName" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="IsPatientRating" Nullable="false" />
+    <Property Type="Decimal" Name="Rating" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="Int32" Name="CaseCount" Nullable="true" />
+    <Property Type="Boolean" Name="IsPayment" Nullable="false" />
+    <Property Type="String" Name="CertificateFileName" Nullable="false" MaxLength="500" />
+    <Property Type="Boolean" Name="IsAccountActivated" Nullable="false" />
+    <Property Type="String" Name="Comment" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="PatientDetails">
+    <Property Type="String" Name="EMailId" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+  </ComplexType>
+  <ComplexType Name="NonCertifiedDoctorDetailsByFilterType">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="DoctorId" Nullable="false" />
+    <Property Type="String" Name="Street" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ZipCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Mobile" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="250" />
+    <Property Type="Int64" Name="StateId" Nullable="true" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Is4eOrthoPass" Nullable="false" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DataBaseName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PhotographName" Nullable="true" />
+    <Property Type="String" Name="SourceType" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="IsPatientRating" Nullable="false" />
+    <Property Type="Decimal" Name="Rating" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="String" Name="DomainURL" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="CaseCount" Nullable="true" />
+    <Property Type="Boolean" Name="IsPayment" Nullable="false" />
+    <Property Type="String" Name="CertificateFileName" Nullable="false" MaxLength="500" />
+    <Property Type="Boolean" Name="IsAccountActivated" Nullable="false" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="PatientGallery">
+    <Key>
+      <PropertyRef Name="PatientGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="PatientGalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <NavigationProperty Name="PatientGalleryMaster" Relationship="eDentalOrthoModel.FK_PatientGallery_PatientGalleryMaster" FromRole="PatientGallery" ToRole="PatientGalleryMaster" />
+  </EntityType>
+  <ComplexType Name="PatientGalleryDetails">
+    <Property Type="String" Name="FileName" Nullable="false" MaxLength="500" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="Treatment" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <EntityType Name="PatientBrochure">
+    <Key>
+      <PropertyRef Name="PatientBrochureId" />
+    </Key>
+    <Property Type="Int64" Name="PatientBrochureId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="PatientName" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PatientEmail" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="DoctorEmail" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="AllReviewDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="ReviewId" Nullable="false" />
+    <Property Type="String" Name="ReviewContent" Nullable="false" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="PatientEmail" Nullable="false" MaxLength="450" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="450" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="Decimal" Name="Rating" Nullable="true" Precision="38" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="BecomeProviderDetails">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="NewCase">
+    <Key>
+      <PropertyRef Name="CaseId" />
+    </Key>
+    <Property Type="Int64" Name="CaseId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateOfBirth" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="OrthoSystem" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrthoCondition" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherCondition" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="CreatedBy" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="String" Name="LastUpdatedBy" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsNew" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="NewCaseDetails">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="caseId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="OrthoSystem" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrthoCondition" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="OtherCondition" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Notes" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="PaymentId" Nullable="true" />
+    <Property Type="Boolean" Name="IsShared" Nullable="false" />
+    <Property Type="String" Name="SharedDoctorEmailId" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="AllDoctorByNewCase">
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="PatientListByDoctorEmail">
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="PatientName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="PatientRegistrationDetailForMail">
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="UserType" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="PatientCaseEmailDetail">
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="RoleType" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="CaseId" Nullable="true" />
+    <Property Type="String" Name="CaseNo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Notes" Nullable="true" />
+    <Property Type="String" Name="OrthoCondition" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="OrthoSystem" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OtherCondition" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="DoctorFirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DoctorLastName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="TrackCase">
+    <Key>
+      <PropertyRef Name="TrackId" />
+    </Key>
+    <Property Type="Int64" Name="TrackId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="TrackNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CaseId" Nullable="false" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="UpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="UpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="TrackCaseListDetails">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="TrackId" Nullable="false" />
+    <Property Type="Int64" Name="CaseId" Nullable="false" />
+    <Property Type="String" Name="TrackNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Description" Nullable="true" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="false" MaxLength="250" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="PatientName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="CaseAndTrackDetailForSA">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="PatientId" Nullable="true" />
+    <Property Type="Int64" Name="caseId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="OrthoSystem" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrthoCondition" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="OtherCondition" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Notes" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="TrackNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="TrackId" Nullable="true" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="1" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="Int64" Name="PaymentId" Nullable="true" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Ammount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="21" Scale="4" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="DateTime" Name="CaseDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="rn" Nullable="true" />
+    <Property Type="Boolean" Name="IsShared" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TrackEmailDetails">
+    <Property Type="Int64" Name="TrackId" Nullable="false" />
+    <Property Type="String" Name="TrackNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Description" Nullable="true" />
+    <Property Type="Int64" Name="CaseId" Nullable="false" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="UpdatedDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DoctorFirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="DoctorLastName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="AddressMaster">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Type="Int64" Name="AddressId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="CountryId" />
+    <Property Type="Int64" Name="StateId" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="LocalContacts" Relationship="eDentalOrthoModel.FK_LocalContact_AddressMaster" FromRole="AddressMaster" ToRole="LocalContact" />
+    <NavigationProperty Name="Doctors" Relationship="eDentalOrthoModel.FK_Doctor_AddressMaster" FromRole="AddressMaster" ToRole="Doctor" />
+  </EntityType>
+  <EntityType Name="ContactMaster">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Type="Int64" Name="ContactId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="HomeContact" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Mobile" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WorkContact" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="LocalContacts" Relationship="eDentalOrthoModel.FK_LocalContact_ContactMaster" FromRole="ContactMaster" ToRole="LocalContact" />
+    <NavigationProperty Name="Doctors" Relationship="eDentalOrthoModel.FK_Doctor_ContactMaster" FromRole="ContactMaster" ToRole="Doctor" />
+  </EntityType>
+  <EntityType Name="WSB_UserDomainMaster">
+    <Key>
+      <PropertyRef Name="UserDomainMasterID" />
+      <PropertyRef Name="msrepl_tran_version" />
+    </Key>
+    <Property Type="Int64" Name="UserDomainMasterID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="EmailID" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UserID" />
+    <Property Type="String" Name="DomainURL" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAutoLogin" />
+    <Property Type="String" Name="UserType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="RequestId" />
+    <Property Type="Int64" Name="SourceId" />
+    <Property Type="String" Name="SourceType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DatabaseName" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="msrepl_tran_version" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FromMailId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ToMailId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CCMailId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BccMailId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Time" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Body" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Subject" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DoctorGalleryMapping">
+    <Key>
+      <PropertyRef Name="DoctorGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="DoctorGalleryId" Nullable="false" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="GetUserDetail">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="250" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetGallleryDetailForDoctor">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+    <Property Type="String" Name="Condition" Nullable="false" MaxLength="250" />
+    <Property Type="Boolean" Name="IsHomeDisplay" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="ConditionGallery">
+    <Key>
+      <PropertyRef Name="ConditionGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="ConditionGalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="GalleryId" Nullable="false" />
+    <Property Type="String" Name="FileName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <NavigationProperty Name="Gallery" Relationship="eDentalOrthoModel.FK_ConditionGallery_Gallery" FromRole="ConditionGallery" ToRole="Gallery" />
+  </EntityType>
+  <Association Name="FK_ConditionGallery_Gallery">
+    <End Type="eDentalOrthoModel.Gallery" Role="Gallery" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.ConditionGallery" Role="ConditionGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gallery">
+        <PropertyRef Name="GalleryId" />
+      </Principal>
+      <Dependent Role="ConditionGallery">
+        <PropertyRef Name="GalleryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetPatientDoctorGallery">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="CaseId" Nullable="false" />
+    <Property Type="Int64" Name="PatientGalleryId" Nullable="false" />
+    <Property Type="String" Name="Treatment" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="isTemplate" Nullable="false" />
+    <Property Type="String" Name="PatientEmail" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="PName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="DName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="AfterId" Nullable="false" />
+    <Property Type="Int32" Name="ImageCount" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="WSB_Country">
+    <Key>
+      <PropertyRef Name="CountryId" />
+      <PropertyRef Name="CountryName" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="LastUpdatedBy" />
+      <PropertyRef Name="LastUpdatedDate" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Type="Int32" Name="CountryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CountryCode" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WSB_State">
+    <Key>
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="Expr3" />
+      <PropertyRef Name="Expr4" />
+      <PropertyRef Name="Expr5" />
+      <PropertyRef Name="Expr6" />
+      <PropertyRef Name="Expr7" />
+      <PropertyRef Name="Expr8" />
+      <PropertyRef Name="Expr9" />
+      <PropertyRef Name="StateId" />
+      <PropertyRef Name="CountryId" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="LastUpdatedBy" />
+      <PropertyRef Name="LastUpdatedDate" />
+      <PropertyRef Name="IsActive" />
+      <PropertyRef Name="IsDelete" />
+      <PropertyRef Name="msrepl_tran_version" />
+    </Key>
+    <Property Type="Int64" Name="Expr1" Nullable="false" />
+    <Property Type="String" Name="Expr2" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Expr3" Nullable="false" />
+    <Property Type="Int64" Name="Expr4" Nullable="false" />
+    <Property Type="DateTime" Name="Expr5" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="Expr6" Nullable="false" />
+    <Property Type="DateTime" Name="Expr7" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="Expr8" Nullable="false" />
+    <Property Type="Boolean" Name="Expr9" Nullable="false" />
+    <Property Type="Int64" Name="StateId" Nullable="false" />
+    <Property Type="String" Name="StateName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CountryId" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Name="msrepl_tran_version" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PatientGalleryMaster">
+    <Key>
+      <PropertyRef Name="PatientGalleryId" />
+    </Key>
+    <Property Type="Int64" Name="PatientGalleryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Treatment" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="Int64" Name="BeforeGalleryId" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="String" Name="PatientEmail" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="isTemplate" Nullable="false" />
+    <Property Type="Int64" Name="CaseId" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="PatientGalleries" Relationship="eDentalOrthoModel.FK_PatientGallery_PatientGalleryMaster" FromRole="PatientGalleryMaster" ToRole="PatientGallery" />
+  </EntityType>
+  <Association Name="FK_PatientGallery_PatientGalleryMaster">
+    <End Type="eDentalOrthoModel.PatientGalleryMaster" Role="PatientGalleryMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.PatientGallery" Role="PatientGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PatientGalleryMaster">
+        <PropertyRef Name="PatientGalleryId" />
+      </Principal>
+      <Dependent Role="PatientGallery">
+        <PropertyRef Name="GalleryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetEightImageTemplate">
+    <Property Type="Int64" Name="PatientGalleryId" Nullable="false" />
+    <Property Type="String" Name="Treatment" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="isTemplate" Nullable="false" />
+    <Property Type="String" Name="PatientEmail" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DoctorEmail" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="PName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="DName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="AfterId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetAllCaseWithDiscounted">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Ammount" Nullable="false" Precision="19" />
+    <Property Type="DateTime" Name="TimeStamp" Nullable="true" Precision="23" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="21" Scale="4" />
+  </ComplexType>
+  <EntityType Name="UserConfig">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsPayment" Nullable="false" />
+    <Property Type="Boolean" Name="IsAccountActivated" Nullable="false" />
+    <Property Type="String" Name="CertificateFileName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="UpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="Int64" Name="UpdatedBy" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="usp_GetAllErrorlog_Result">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Logger" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="4000" />
+    <Property Type="String" Name="Exception" Nullable="true" MaxLength="2000" />
+  </ComplexType>
+  <EntityType Name="GenericLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Thread" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Level" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Logger" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Message" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Exception" MaxLength="2000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="usp_Admin_GetAllTrackHistory_Result">
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TrackStatus" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="Description" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="PaymentFailure">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Type="Int64" Name="PaymentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CardNo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NameOnCard" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ExpiryMonth" />
+    <Property Type="Int32" Name="ExpiryYear" />
+    <Property Type="String" Name="CardType" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ammount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CorRelation" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TransactionId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TimeStamp" Precision="3" />
+    <Property Type="String" Name="TransactionRespons" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Phone" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="LookupId" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsSuperAdmin" Nullable="false" />
+    <Property Type="String" Name="UserType" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="UpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="LocalContacts" Relationship="eDentalOrthoModel.FK_LocalContact_User" FromRole="User" ToRole="LocalContact" />
+    <Property Name="is_connect_user" Type="Boolean" />
+  </EntityType>
+  <ComplexType Name="GetAllLocalContacts">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="OrganizationName" Nullable="false" MaxLength="200" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllOrthoCharges">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Decimal" Name="ShipmentAmount" Nullable="false" Precision="19" />
+    <Property Type="String" Name="CountryName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Decimal" Name="CaseShipmentCharge" Nullable="false" Precision="19" />
+    <Property Type="String" Name="CaseTypeName" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="DiscountMaster">
+    <Key>
+      <PropertyRef Name="DiscountId" />
+    </Key>
+    <Property Type="Int64" Name="DiscountId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CouponCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsFlat" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="ExpiryDate" Precision="3" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="CaseCharges" Relationship="eDentalOrthoModel.FK_CaseCharges_DiscountMaster" FromRole="DiscountMaster" ToRole="CaseCharge" />
+  </EntityType>
+  <ComplexType Name="GetAllCaseCharges">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="CaseChargeId" Nullable="false" />
+    <Property Type="Int64" Name="LookupCaseId" Nullable="false" />
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="500" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+    <Property Type="Int64" Name="DiscountId" Nullable="true" />
+    <Property Type="String" Name="CouponCode" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="DiscountValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="DiscountIsActive" Nullable="true" />
+    <Property Type="Boolean" Name="IsFlat" Nullable="true" />
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+  </ComplexType>
+  <EntityType Name="LocalContact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="OrganizationName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="UserId" Nullable="false" />
+    <Property Type="Int64" Name="AddressId" Nullable="false" />
+    <Property Type="Int64" Name="ContactId" Nullable="false" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <NavigationProperty Name="AddressMaster" Relationship="eDentalOrthoModel.FK_LocalContact_AddressMaster" FromRole="LocalContact" ToRole="AddressMaster" />
+    <NavigationProperty Name="ContactMaster" Relationship="eDentalOrthoModel.FK_LocalContact_ContactMaster" FromRole="LocalContact" ToRole="ContactMaster" />
+    <NavigationProperty Name="User" Relationship="eDentalOrthoModel.FK_LocalContact_User" FromRole="LocalContact" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_LocalContact_AddressMaster">
+    <End Type="eDentalOrthoModel.AddressMaster" Role="AddressMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.LocalContact" Role="LocalContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressMaster">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="LocalContact">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LocalContact_ContactMaster">
+    <End Type="eDentalOrthoModel.ContactMaster" Role="ContactMaster" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.LocalContact" Role="LocalContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactMaster">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="LocalContact">
+        <PropertyRef Name="ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LocalContact_User">
+    <End Type="eDentalOrthoModel.User" Role="User" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.LocalContact" Role="LocalContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LocalContact">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="OrthoCharge">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="CountryId" Nullable="false" />
+    <Property Type="Decimal" Name="ExpressShipmentCharge" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="CaseTypeIds" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="CaseShipmentCharge" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="GetAllPatientOrDoctor">
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="UserType" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="GetAllCourceForAdmin">
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="50" />
+    <Property Type="Int64" Name="LookupID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllSubCourceForAdmin">
+    <Property Type="Int64" Name="CourseCategoryId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="500" />
+  </ComplexType>
+  <EntityType Name="PatientCaseDetail">
+    <Key>
+      <PropertyRef Name="CaseId" />
+    </Key>
+    <Property Type="Int64" Name="CaseId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="PatientId" Nullable="false" />
+    <Property Type="String" Name="OrthoSystem" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OrthoCondition" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="OtherCondition" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="Boolean" Name="IsRework" />
+    <Property Type="Boolean" Name="IsRetainer" />
+    <Property Type="Decimal" Name="CaseCharge" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int64" Name="CaseTypeId" />
+    <NavigationProperty Name="PatientCaseDetail1" Relationship="eDentalOrthoModel.FK_PatientCaseDetail_PatientCaseDetail" FromRole="PatientCaseDetail" ToRole="PatientCaseDetail1" />
+    <NavigationProperty Name="PatientCaseDetail2" Relationship="eDentalOrthoModel.FK_PatientCaseDetail_PatientCaseDetail" FromRole="PatientCaseDetail1" ToRole="PatientCaseDetail" />
+    <Property Name="IsShared" Type="Boolean" Nullable="false" />
+    <Property Name="SharedDoctorEmailId" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Patient" Relationship="eDentalOrthoModel.FK_PatientCaseDetail_Patient" FromRole="PatientCaseDetail" ToRole="Patient" />
+  </EntityType>
+  <Association Name="FK_PatientCaseDetail_PatientCaseDetail">
+    <End Type="eDentalOrthoModel.PatientCaseDetail" Role="PatientCaseDetail" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.PatientCaseDetail" Role="PatientCaseDetail1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="PatientCaseDetail">
+        <PropertyRef Name="CaseId" />
+      </Principal>
+      <Dependent Role="PatientCaseDetail1">
+        <PropertyRef Name="CaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetCaseType">
+    <Property Type="Int64" Name="LookupId" Nullable="false" />
+    <Property Type="Int64" Name="LookupTypeId" Nullable="false" />
+    <Property Type="String" Name="LookupName" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="LookupDescription" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetDoctorListFromOrthoAndAAAD_Result">
+    <Property Type="String" Name="DoctorName" Nullable="false" MaxLength="101" />
+    <Property Type="Int64" Name="DoctorId" Nullable="false" />
+    <Property Type="String" Name="street" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="zipcode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="mobile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="city" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="StateID" Nullable="true" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Is4eOrthoPass" Nullable="true" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DataBaseName" Nullable="false" MaxLength="13" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="PhotographerName" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsAccountActivated" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="CaseCharge">
+    <Key>
+      <PropertyRef Name="CaseChargeId" />
+    </Key>
+    <Property Type="Int64" Name="CaseChargeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int64" Name="LookupCaseId" Nullable="false" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int64" Name="DiscountId" />
+    <Property Type="Int64" Name="CreatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="LastUpdatedBy" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" Precision="3" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+    <Property Type="String" Name="DoctorEmailId" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DiscountMaster" Relationship="eDentalOrthoModel.FK_CaseCharges_DiscountMaster" FromRole="CaseCharge" ToRole="DiscountMaster" />
+  </EntityType>
+  <Association Name="FK_CaseCharges_DiscountMaster">
+    <End Type="eDentalOrthoModel.DiscountMaster" Role="DiscountMaster" Multiplicity="0..1" />
+    <End Type="eDentalOrthoModel.CaseCharge" Role="CaseCharge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiscountMaster">
+        <PropertyRef Name="DiscountId" />
+      </Principal>
+      <Dependent Role="CaseCharge">
+        <PropertyRef Name="DiscountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetAllCashPaymentRecoredForPatientCase_Result">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="PaymentId" Nullable="false" />
+    <Property Type="Decimal" Name="Ammount" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PatientName" Nullable="false" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="false" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="GetAllOrthoDoctor_Result">
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CountryName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="StateName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="1" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDelete" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="PaymentSuccess">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Name="PaymentId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CardNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NameOnCard" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ExpiryMonth" Type="Int32" />
+    <Property Name="ExpiryYear" Type="Int32" />
+    <Property Name="CardType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Ammount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Discount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Shipment" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CorRelation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TransactionId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TimeStamp" Type="DateTime" Precision="3" />
+    <Property Name="TransactionRespons" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AVSCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CVV2Code" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="SupplyOrderId" Type="Int64" />
+    <Property Name="CaseId" Type="Int64" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DoctorEmailId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LookupId" Type="Int32" />
+    <Property Name="IsCashPayed" Type="Boolean" Nullable="false" />
+    <Property Name="PatientEmailId" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="StageId" Type="Int64" />
+    <Property Name="AppointmentId" Type="Int64" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PatientId" Type="Int64" />
+    <Property Name="AcknowledgementNumber" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Stage">
+    <Key>
+      <PropertyRef Name="StageId" />
+    </Key>
+    <Property Name="StageId" Type="Int64" Nullable="false" />
+    <Property Name="PatientEmail" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="StageNo" Type="Int32" />
+    <Property Name="StageAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="StageDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="isPaymentByPatient" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int64" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="PatientId" Type="Int64" />
+    <Property Name="StageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsDispetched" Type="Boolean" />
+    <Property Name="IsReceived" Type="Boolean" />
+    <NavigationProperty Name="Patient" Relationship="eDentalOrthoModel.FK_Stage_Patient" FromRole="Stage" ToRole="Patient" />
+  </EntityType>
+  <EntityType Name="StageMaster">
+    <Key>
+      <PropertyRef Name="StageId" />
+    </Key>
+    <Property Name="StageId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StageName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StagePrice" Type="Double" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Int64" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="PatientEmail" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="PatientId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="GetAllDoctor">
+    <Key>
+      <PropertyRef Name="DoctorName" />
+      <PropertyRef Name="DoctorId" />
+      <PropertyRef Name="Expr1" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+    </Key>
+    <Property Name="DoctorName" Type="String" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="DoctorId" Type="Int64" Nullable="false" />
+    <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmailID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StateId" Type="Int64" />
+    <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Is4eOrthoPass" Type="Int32" />
+    <Property Name="StateName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Expr1" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhotographName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SourceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DomainURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Degree" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Speciality" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PageDetailWithLanguage">
+    <Key>
+      <PropertyRef Name="PageDetailID" />
+      <PropertyRef Name="LanguageShortCode" />
+      <PropertyRef Name="LanguageCultureCode" />
+    </Key>
+    <Property Name="PageDetailID" Type="Int64" Nullable="false" />
+    <Property Name="PageID" Type="Int64" />
+    <Property Name="MenuItem" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="PageTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="PageContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PageKeyword" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="URLName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LanguageID" Type="Int32" />
+    <Property Name="LanguageShortCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="LanguageCultureCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Patient">
+    <Key>
+      <PropertyRef Name="PatientId" />
+    </Key>
+    <Property Name="PatientId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EmailId" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int64" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="PatientSource" Type="Int32" />
+    <Property Name="AppointmentId" Type="Int64" />
+    <NavigationProperty Name="PatientCaseDetails" Relationship="eDentalOrthoModel.FK_PatientCaseDetail_Patient" FromRole="Patient" ToRole="PatientCaseDetail" />
+    <NavigationProperty Name="Stages" Relationship="eDentalOrthoModel.FK_Stage_Patient" FromRole="Patient" ToRole="Stage" />
+  </EntityType>
+  <Association Name="FK_PatientCaseDetail_Patient">
+    <End Type="eDentalOrthoModel.Patient" Role="Patient" Multiplicity="1" />
+    <End Type="eDentalOrthoModel.PatientCaseDetail" Role="PatientCaseDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientId" />
+      </Principal>
+      <Dependent Role="PatientCaseDetail">
+        <PropertyRef Name="PatientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stage_Patient">
+    <End Type="eDentalOrthoModel.Patient" Role="Patient" Multiplicity="0..1" />
+    <End Type="eDentalOrthoModel.Stage" Role="Stage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patient">
+        <PropertyRef Name="PatientId" />
+      </Principal>
+      <Dependent Role="Stage">
+        <PropertyRef Name="PatientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Doctor">
+    <Key>
+      <PropertyRef Name="DoctorId" />
+    </Key>
+    <Property Name="DoctorId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MI" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DoctorNo" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="AddressId" Type="Int64" />
+    <Property Name="ContactId" Type="Int64" />
+    <Property Name="SSNNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="StateIDNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="TinNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="MedicalNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="DrugIdNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="NPINo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="ProvNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="OfficeNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="MedicareNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="OtherIdNo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="IsCross" Type="Boolean" />
+    <Property Name="CrossShieldValue" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int64" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int64" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+    <Property Name="PhotographName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TimeZone" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SpecialityId" Type="Int64" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DoctorSource" Type="Int32" />
+    <NavigationProperty Name="AddressMaster" Relationship="eDentalOrthoModel.FK_Doctor_AddressMaster" FromRole="Doctor" ToRole="AddressMaster" />
+    <NavigationProperty Name="ContactMaster" Relationship="eDentalOrthoModel.FK_Doctor_ContactMaster" FromRole="Doctor" ToRole="ContactMaster" />
+  </EntityType>
+  <Association Name="FK_Doctor_AddressMaster">
+    <End Type="eDentalOrthoModel.AddressMaster" Role="AddressMaster" Multiplicity="0..1" />
+    <End Type="eDentalOrthoModel.Doctor" Role="Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressMaster">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doctor_ContactMaster">
+    <End Type="eDentalOrthoModel.ContactMaster" Role="ContactMaster" Multiplicity="0..1" />
+    <End Type="eDentalOrthoModel.Doctor" Role="Doctor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactMaster">
+        <PropertyRef Name="ContactId" />
+      </Principal>
+      <Dependent Role="Doctor">
+        <PropertyRef Name="ContactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetCaseAndTrackDetailForSA1_Result">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="PatientId" Nullable="true" />
+    <Property Type="Int64" Name="caseId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="OrthoSystem" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrthoCondition" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="OtherCondition" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Notes" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TrackNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="TrackId" Nullable="true" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="1" />
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="Int64" Name="PaymentId" Nullable="true" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CaseDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Ammount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="21" Scale="4" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="rn" Nullable="true" />
+    <Property Type="Boolean" Name="IsShared" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetCaseAndTrackDetailForSA_Test_Result">
+    <Property Type="Int64" Name="RowNumber" Nullable="true" />
+    <Property Type="Int64" Name="PatientId" Nullable="true" />
+    <Property Type="Int64" Name="caseId" Nullable="false" />
+    <Property Type="String" Name="CaseNo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PatientName" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="EmailId" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="BirthDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="OrthoSystem" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrthoCondition" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="OtherCondition" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Notes" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="DoctorEmailId" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TrackNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="TrackId" Nullable="true" />
+    <Property Type="String" Name="UpdatedByEmail" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="1" />
+    <Property Type="Int64" Name="SupplyOrderId" Nullable="false" />
+    <Property Type="Int64" Name="PaymentId" Nullable="true" />
+    <Property Type="DateTime" Name="PaymentDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CaseDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="Ammount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="21" Scale="4" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="String" Name="DoctorName" Nullable="true" MaxLength="101" />
+    <Property Type="Int64" Name="rn" Nullable="true" />
+    <Property Type="Boolean" Name="IsShared" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetPatientStagePaymentReport_Result">
+    <Property Type="Int64" Name="PaymentId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="StageName" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Status" Nullable="true" />
+    <Property Type="Decimal" Name="Ammount" Nullable="false" Precision="19" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <EntityType Name="CaseGallery">
+    <Key>
+      <PropertyRef Name="CaseGalleryId" />
+    </Key>
+    <Property Name="CaseGalleryId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CaseId" Type="Int64" />
+    <Property Name="FileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastUpdatedBy" Type="Int32" />
+  </EntityType>
+</Schema>

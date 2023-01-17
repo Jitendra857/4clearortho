@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>إلى الوراء</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>إلى الوراء</value>
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="chkIsActiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrhtoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOtherConditionResource1.Text" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="chkOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCaseNoResource1.Text" xml:space="preserve">
+    <value>القضية رقم</value>
+  </data>
+  <data name="lblCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateofBirthResource1.Text" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="lblDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>البريد الإلكتروني معرف</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExistingResource1.Text" xml:space="preserve">
+    <value>المريض النوع</value>
+  </data>
+  <data name="lblExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>جنس</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>إضافة المريض / حالة جديدة</value>
+  </data>
+  <data name="lblHeaderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIsActiveResource1.Text" xml:space="preserve">
+    <value>نشط</value>
+  </data>
+  <data name="lblIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotesResource1.Text" xml:space="preserve">
+    <value>حالة التفاصيل</value>
+  </data>
+  <data name="lblNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoConditionResource1.Text" xml:space="preserve">
+    <value>أورثو الحالة</value>
+  </data>
+  <data name="lblOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoSysResource1.Text" xml:space="preserve">
+    <value>نظام أورثو</value>
+  </data>
+  <data name="lblOrthoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectPatientResource1.Text" xml:space="preserve">
+    <value>حدد المريض</value>
+  </data>
+  <data name="lblSelectPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>صينية</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>TRAY</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>قوس</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>BRACKET</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>ازدحام</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>CROWDING</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>مباعدة</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>SPACING</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>لدغة عبر</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>CROSSBITE</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>مفتوحة لدغة</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>OPENBITE</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>لدغة عميقة</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>DEEPBITE</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>ضيق القوس</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>NARROWARCH</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnAnteriorResource1.Text" xml:space="preserve">
+    <value>أمامي</value>
+  </data>
+  <data name="rbtnAnteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnExistingResource1.Text" xml:space="preserve">
+    <value>موجود</value>
+  </data>
+  <data name="rbtnExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnFemaleResource1.Text" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="rbtnFemaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnMaleResource1.Text" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="rbtnMaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnNewResource1.Text" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="rbtnNewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnPosteriorResource1.Text" xml:space="preserve">
+    <value>خلفي</value>
+  </data>
+  <data name="rbtnPosteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>من فضلك ادخل الاسم الأول</value>
+  </data>
+  <data name="rfvFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ErrorMessage" xml:space="preserve">
+    <value>يرجى اختيار المريض</value>
+  </data>
+  <data name="rfvPatientResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ErrorMessage" xml:space="preserve">
+    <value>يرجى تحديد تاريخ ميلاده.</value>
+  </data>
+  <data name="rfvtxtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>من فضلك ادخل رقم البريد الإلكتروني.</value>
+  </data>
+  <data name="rfvtxtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>الرجاء إدخال اسم آخر</value>
+  </data>
+  <data name="rfvtxtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ErrorMessage" xml:space="preserve">
+    <value>الرجاء إدخال صالح ID البريد الإلكتروني على سبيل المثال: "abc@yahoo.com"</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>حدد التاريخ</value>
+  </data>
+  <data name="SelectPatient" xml:space="preserve">
+    <value>حدد المريض</value>
+  </data>
+  <data name="txtCaseNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>نهاية</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالى</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>سابق </value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>كمية</value>
+  </data>
+  <data name="PackageDetails" xml:space="preserve">
+    <value>حزمة التفاصيل</value>
+  </data>
+  <data name="PackageImage" xml:space="preserve">
+    <value>حزمة صورة</value>
+  </data>
+  <data name="Product Image" xml:space="preserve">
+    <value>صورة المنتج</value>
+  </data>
+  <data name="ProductImage" xml:space="preserve">
+    <value>صورة المنتج</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>اسم المنتج</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="SelectPackage" xml:space="preserve">
+    <value>اختيار مجموعة </value>
+  </data>
+  <data name="SelectProduct" xml:space="preserve">
+    <value>حدد المنتج </value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>إجمالي</value>
+  </data>
+  <data name="CardNoIsNotMatch" xml:space="preserve">
+    <value>بطاقة لا لا تتناسب مع نوع البطاقة، يرجى إدخال رقم بطاقة سارية المفعول أو تغيير نوع البطاقة</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>حجم الملف لا يمكن أن يكون أكثر من 2MB!</value>
+  </data>
+  <data name="Isnotavalidimage" xml:space="preserve">
+    <value>ليس ملف صورة صالح.</value>
+  </data>
+  <data name="lblAfterTemplateResource1.Text" xml:space="preserve">
+    <value>بعد قالب</value>
+  </data>
+  <data name="lblAmountResource1.Text" xml:space="preserve">
+    <value>مبلغ ($)</value>
+  </data>
+  <data name="lblAutomaticResource1.Text" xml:space="preserve">
+    <value>التجديد التلقائي</value>
+  </data>
+  <data name="lblBeforeTemplateResource1.Text" xml:space="preserve">
+    <value>قبل قالب</value>
+  </data>
+  <data name="lblCardNumberResource1.Text" xml:space="preserve">
+    <value>رقم البطاقة</value>
+  </data>
+  <data name="lblCareTypeResource1.Text" xml:space="preserve">
+    <value>نوع البطاقة</value>
+  </data>
+  <data name="lblCaseDetailResource1.Text" xml:space="preserve">
+    <value>الحالة التفاصيل</value>
+  </data>
+  <data name="lblCVVCodeResource1.Text" xml:space="preserve">
+    <value>CVV2 / CVC2 مدونة</value>
+  </data>
+  <data name="lblErrorMsgResource1.Text" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+  <data name="lblExpiresResource1.Text" xml:space="preserve">
+    <value>تنتهي</value>
+  </data>
+  <data name="lblHeaderSelectPackageResource1.Text" xml:space="preserve">
+    <value>اختر حزمة</value>
+  </data>
+  <data name="lblHeaderSelectPatientResource1.Text" xml:space="preserve">
+    <value>حدد المريض</value>
+  </data>
+  <data name="lblHeadPaymentResource1.Text" xml:space="preserve">
+    <value>جعل الدفع</value>
+  </data>
+  <data name="lblNameonResource1.Text" xml:space="preserve">
+    <value>الاسم على البطاقة</value>
+  </data>
+  <data name="lblPayableAmountResource1.Text" xml:space="preserve">
+    <value>المبلغ المستحق</value>
+  </data>
+  <data name="lblProductAmountResource1.Text" xml:space="preserve">
+    <value>كمية</value>
+  </data>
+  <data name="lblReceivedResource1.Text" xml:space="preserve">
+    <value>يستلم؟</value>
+  </data>
+  <data name="lblRemarksResource1.Text" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="lblTotalAmountResource1.Text" xml:space="preserve">
+    <value>المبلغ الإجمالي</value>
+  </data>
+  <data name="MonthValidMessage" xml:space="preserve">
+    <value>الرجاء اختيار الحالية أو المستقبلية شهور.</value>
+  </data>
+  <data name="Pleaseselectanyoneorthocondition" xml:space="preserve">
+    <value>يرجى تحديد أي حالة أورثو واحد.</value>
+  </data>
+  <data name="Pleaseuploadallimages" xml:space="preserve">
+    <value>يرجى تحميل جميع الصور.</value>
+  </data>
+  <data name="SkipSubmit" xml:space="preserve">
+    <value>تخطي اختيار الحزمة</value>
+  </data>
+  <data name="lblCreatedResource1.Text" xml:space="preserve">
+    <value>تاريخ الإنشاء:</value>
+  </data>
+  <data name="Anterior" xml:space="preserve">
+    <value>أمامي</value>
+  </data>
+  <data name="buttonContent" xml:space="preserve">
+    <value>قطرة / اختار صورة</value>
+  </data>
+  <data name="FullFace" xml:space="preserve">
+    <value>الوجه الكامل</value>
+  </data>
+  <data name="LeftLateral" xml:space="preserve">
+    <value>اليسار الجانبي</value>
+  </data>
+  <data name="Mandibulary" xml:space="preserve">
+    <value>الفك السفلي</value>
+  </data>
+  <data name="Maxillary" xml:space="preserve">
+    <value>الفك العلوي</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="RightLateral" xml:space="preserve">
+    <value>الحق الجانبي</value>
+  </data>
+  <data name="Smile" xml:space="preserve">
+    <value>ابتسامة</value>
+  </data>
+  <data name="ViewPackage" xml:space="preserve">
+    <value>عرض حزمة</value>
+  </data>
+  <data name="ViewPatient" xml:space="preserve">
+    <value>عرض المريض</value>
+  </data>
+  <data name="ViewPayment" xml:space="preserve">
+    <value>عرض الدفع</value>
+  </data>
+  <data name="EditPatientCase" xml:space="preserve">
+    <value>عرض المريض / حالة جديدة</value>
+  </data>
+  <data name="RETAINERCASECHARGE" xml:space="preserve">
+    <value>التوكيل حالة التفاصيل</value>
+  </data>
+  <data name="REWORKCASECHARGE" xml:space="preserve">
+    <value>التوكيل حالة التفاصيل</value>
+  </data>
+  <data name="lblCaseChargeResource1.Text" xml:space="preserve">
+    <value>حالة المسؤول ($)</value>
+  </data>
+  <data name="lblDiscountResource1.Text" xml:space="preserve">
+    <value>- خصم ($)</value>
+  </data>
+  <data name="lblPackageAmtResource1.Text" xml:space="preserve">
+    <value>الدفع باستخدام بطاقة الائتمان</value>
+  </data>
+  <data name="lblTotalPayableResource1" xml:space="preserve">
+    <value>  المبلغ المستحق ($)</value>
+  </data>
+  <data name="lblTotalResource1.Text" xml:space="preserve">
+    <value>الدفع باستخدام بطاقة الائتمان</value>
+  </data>
+  <data name="ltrSelectModeResource1.Text" xml:space="preserve">
+    <value>حدد طريقة الدفع</value>
+  </data>
+  <data name="PayusingCreditCard" xml:space="preserve">
+    <value>الدفع باستخدام بطاقة الائتمان</value>
+  </data>
+  <data name="AlreadyPackage" xml:space="preserve">
+    <value>يرجى تحديد أي طريقة دفع واحدة.</value>
+  </data>
+  <data name="SelectPaymentMethod" xml:space="preserve">
+    <value>يرجى تحديد أي طريقة دفع واحدة.</value>
+  </data>
+  <data name="Pleaseselectcase" xml:space="preserve">
+    <value>يرجى تحديد أي طريقة دفع واحدة.</value>
+  </data>
+  <data name="QuantityErrorMessage" xml:space="preserve">
+    <value>يجب أن تكون الكمية gretter من 0.</value>
+  </data>
+  <data name="_ResorseObject" xml:space="preserve">
+    <value>انقر فوق لعرض الحجم الكامل</value>
+    <comment>Click to view in fill size</comment>
+  </data>
+  <data name="btnApplyDiscount" xml:space="preserve">
+    <value>خصص لغرض</value>
+    <comment>Apply</comment>
+  </data>
+  <data name="btnCancelDiscount" xml:space="preserve">
+    <value>إلغاء</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="chkIsRegularShipmentResource1.Text" xml:space="preserve">
+    <value>شحنة العادية</value>
+    <comment>Regular Shipment</comment>
+  </data>
+  <data name="Couponisnotvalidorexpired" xml:space="preserve">
+    <value>رمز القسيمة غير صالحة أو منتهية الصلاحية.</value>
+    <comment>Coupon code is not valid or expired.</comment>
+  </data>
+  <data name="Entercouponcode" xml:space="preserve">
+    <value>الرجاء إدخال رمز القسيمة</value>
+    <comment>Please enter coupon code</comment>
+  </data>
+  <data name="lblDiscountCouponCodeResource1.Text" xml:space="preserve">
+    <value>خصم رمز القسيمة</value>
+    <comment>Discount Coupon Code</comment>
+  </data>
+  <data name="lblExpressShipmentResource1.Text" xml:space="preserve">
+    <value>صريحة الشحن</value>
+    <comment>Express Shipment</comment>
+  </data>
+  <data name="lblBacktopaymentResource1.Text" xml:space="preserve">
+    <value>العودة إلى اختيار طريقة الدفع.</value>
+    <comment>Back to payment mode selection.</comment>
+  </data>
+</root>

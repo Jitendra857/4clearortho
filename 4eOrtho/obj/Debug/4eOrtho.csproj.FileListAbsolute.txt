@@ -1,0 +1,210 @@
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.dll.config
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.pdb
+D:\Projects\4ClearOrtho\4eOrtho\bin\ar-SA\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\es-ES\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\fa-IR\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\ko-KR\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\zh-CN\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\AjaxControlToolkit.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\itextsharp.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\itextsharp.xmlworker.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\PayPalCoreSDK.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Web.Http.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.dll
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.pdb
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.pdb
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.dll.config
+D:\Projects\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.pdb
+D:\Projects\4ClearOrtho\4eOrtho\bin\itextsharp.xml
+D:\Projects\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.xml
+D:\Projects\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.xml
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.xml
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Web.Http.xml
+D:\Projects\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.xml
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ar-SA.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.es-ES.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.fa-IR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ko-KR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.zh-CN.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ar-SA.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.es-ES.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.fa-IR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ko-KR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.zh-CN.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ar-SA.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.es-ES.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.fa-IR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ko-KR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.zh-CN.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ar-SA.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.es-ES.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.fa-IR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ko-KR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.zh-CN.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ar-SA.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.es-ES.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.fa-IR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ko-KR.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.zh-CN.resources
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.GenerateResource.cache
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.CoreCompileInputs.cache
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\ar-SA\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\es-ES\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\fa-IR\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\ko-KR\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\zh-CN\4eOrtho.resources.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.CopyComplete
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.dll
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.pdb
+D:\Projects\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.AssemblyReference.cache
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\ar-SA\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\es-ES\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\fa-IR\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\ko-KR\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\zh-CN\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\AjaxControlToolkit.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.xmlworker.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalCoreSDK.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csprojResolveAssemblyReference.cache
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ar-SA.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.es-ES.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.fa-IR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ko-KR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.zh-CN.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ar-SA.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.es-ES.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.fa-IR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ko-KR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.zh-CN.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ar-SA.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.es-ES.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.fa-IR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ko-KR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.zh-CN.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ar-SA.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.es-ES.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.fa-IR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ko-KR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.zh-CN.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ar-SA.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.es-ES.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.fa-IR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ko-KR.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.zh-CN.resources
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.GenerateResource.Cache
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\ar-SA\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\es-ES\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\fa-IR\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\ko-KR\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\zh-CN\4eOrtho.resources.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.dll.config
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ar-SA.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.es-ES.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.fa-IR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.ko-KR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.ListNewCaseDetails.aspx.zh-CN.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ar-SA.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.es-ES.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.fa-IR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.ko-KR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.Admin.App_LocalResources.UpdateTrackStatus.aspx.zh-CN.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ar-SA.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.es-ES.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.fa-IR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.ko-KR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.ListTrackCase.aspx.zh-CN.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ar-SA.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.es-ES.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.fa-IR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.ko-KR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.PatientProfile.aspx.zh-CN.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ar-SA.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.es-ES.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.fa-IR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.ko-KR.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\_4eOrtho.App_LocalResources.UpdateTrackDetail.aspx.zh-CN.resources
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.GenerateResource.Cache
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.dll.config
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\ar-SA\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\es-ES\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\fa-IR\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\ko-KR\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\zh-CN\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\AjaxControlToolkit.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.xmlworker.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalCoreSDK.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.BAL.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.Utility.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\itextsharp.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\Newtonsoft.Json.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\PayPalMerchantSDK.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Net.Http.Formatting.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\System.Web.Http.WebHost.xml
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\ar-SA\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\es-ES\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\fa-IR\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\ko-KR\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\zh-CN\4eOrtho.resources.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\bin\4eOrtho.DAL.dll.config
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.AssemblyReference.cache
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.CoreCompileInputs.cache
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho\obj\Debug\4eOrtho.csproj.CopyComplete

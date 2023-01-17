@@ -1,0 +1,14 @@
+D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.dll.config
+D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.dll
+D:\Projects\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.pdb
+D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.dll
+D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.pdb
+D:\Projects\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.csproj.AssemblyReference.cache
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.dll.config
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\bin\Debug\4eOrtho.DAL.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.dll
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.pdb
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.csproj.AssemblyReference.cache
+F:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.DAL\obj\Debug\4eOrtho.DAL.csproj.CoreCompileInputs.cache

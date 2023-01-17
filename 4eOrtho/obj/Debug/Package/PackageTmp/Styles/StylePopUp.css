@@ -1,0 +1,406 @@
+﻿@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-webfont.eot');
+    src: url('../fonts/opensans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-webfont.woff') format('woff'),
+         url('../fonts/opensans-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body, table
+{
+    color: #000000;
+    font-size: 12px;
+    font-family: 'open_sansregular';
+}
+
+input:focus, select:focus, textarea:focus
+{
+    background-color: #EDF7FD !important;
+    outline: #000 dotted 1px;
+}
+a
+{
+    color: #000000;
+    cursor: pointer !important;
+    text-decoration: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+.app_popup
+{
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 425px;
+}
+
+
+
+.blue_btn_small input
+{
+    background: url("../Content/images/bgi/small-btn-bg.jpg") repeat-x;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: normal;
+    height: 23px;
+    min-width: 60px;
+    behavior: url(pie.htc);
+    position: relative;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0px;
+}
+
+.blue_btn_small input
+{
+    background: url("../Content/images/bgi/small-btn-bg-hover.jpg") repeat-x;
+}
+
+.blue_btn_small.mrgn
+{
+    margin-right: 0;
+    float: right;
+}
+
+.dark_btn_small input
+{
+    background: url("../Content/images/bgi/small-btn-dark-bg.jpg") repeat-x;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 11px;
+    font-weight: normal;
+    height: 23px;
+    min-width: 60px;
+    behavior: url(pie.htc);
+    position: relative;
+    margin-left: 10px;
+    padding: 0px;
+    cursor:pointer;
+}
+.dark_btn_small.mrgn
+{
+    margin-right: 0;
+    float: right;
+}
+.alignleft
+{
+    float: left;
+}
+.app_popup
+{
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    margin: 5px;
+    width: 743px;
+}
+.equipbg
+{
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    color: #333333;
+    font-size: 12px;
+    padding: 8px 4px 5px;
+}
+.bottom_btn.spadd
+{
+    padding: 10px 0 0 0;
+}
+.pop_upbutton_top
+{
+    margin-top: 10px;
+}
+input, select
+{
+    vertical-align: middle;
+}
+button, input, select, textarea
+{
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+.equip
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #333333;
+    background: #f4f4f4;
+    border-left: solid 1px #dddddd;
+    border-top: solid 1px #dddddd;
+    padding: 8px 4px 8px 4px;
+}
+.rgt
+{
+    border-right: solid 1px #dddddd;
+    border-bottom: solid 1px #dddddd;
+    background: none;
+}
+.popupparsonal_textfild
+{
+    padding: 3px 0 0;
+}
+.popupparsonal_textfild label
+{
+    color: #333333;
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    margin-right: 8px;
+    width: 105px;
+}
+.poppersonal_box h3
+{
+    color: #333333;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.popupparsonal_textfild input[type="text"], .parsonal_textfild input[type="password"]
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font-size: 12px;
+    padding: 6px 5px;
+    width: 219px;
+}
+.popupparsonal_textfild textarea{width:419px; min-height:132px; direction:ltr;max-height:132px; border:solid 1px #dddddd; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; padding:5px 5px; font-size:12px; color:#333333;}
+.popupparsonal_textfild label.wide { width:170px; float:left; margin-right:8px; font-size:13px; color:#333333; line-height:24px;}
+.equipbg input[type="text"]
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font-size: 12px;
+    padding: 4px 4px;
+}
+.equipbg .button
+{
+    border: solid 1px #002E52;
+    background-color: #06538D;
+    color: #FFFFFF;
+    padding: 2px 4px;
+}
+.equipbg .ui-datepicker-trigger
+{
+    width: 25px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.equip-paging
+{
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333333;
+    background: #f4f4f4;
+    border-left: solid 1px #dddddd;
+    border-top: solid 1px #dddddd;
+    padding: 8px 0;
+}
+.button-page
+{
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 5px;
+}
+.selected-button-page
+{
+    background: #ccc;
+    display: inline-block;
+    margin: 5px;
+    padding: 4px 7px;
+}
+
+.detamain
+{
+    width: 940px;
+}
+
+.equip a
+{
+    background: url(../images/bgi/arrow_normal.png) no-repeat right 8px;
+    padding: 8px 20px 8px 0px;
+    display: inline;
+}
+.equip a.ascending
+{
+    background: url(../images/bgi/arrow_up.png) no-repeat right 8px;
+    padding: 8px 20px 8px 0px;
+    display: inline;
+}
+.equip a.descending
+{
+    background: url(../images/bgi/arrow_down.png) no-repeat right 8px;
+    padding: 8px 20px 8px 0px;
+    display: inline;
+}
+.equip a:hover
+{
+    text-decoration: none;
+}
+.alignright
+{
+    float: right;
+}
+.margintop
+{
+    margin-top: 125px;
+}
+.clear
+{
+    clear: both;
+    height: 0;
+}
+.fieldsetclass
+{
+    border: 1px solid #000000;
+    padding-left: 5px;
+    width: 98.8%;
+    padding-right: 5px;
+}
+.legendclass
+{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12x;
+}
+.lstclass
+{
+    margin: 10px 0 0 14px;
+}
+
+.personal_box
+{
+    overflow: hidden;
+}
+.personal_box .textfild_row
+{
+    clear: both;
+    overflow: hidden;
+    padding: 3px 0 0 0;
+   
+}
+.personal_box .textfild_row label
+{
+    width: 170px;
+    display: block;
+    float: left;
+    font-weight: normal; font-size:13px;
+    color: #333333;
+    vertical-align: middle;
+}
+.personal_box .textfild_row label span
+{
+    color: #ff0000;
+    padding: 5px;
+}
+.personal_box .textfild_row > span
+{
+    float: left;
+    margin: 0 5px;
+}
+
+personal_box .textfild_row input
+{
+    float: left;
+}
+.personal_box .textfild_row .cover-bg
+{
+    float: left;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    width: 219px;
+}
+.personal_box .textfild_row .cover-bg select
+{
+    height: 17px;
+    width: 220px;
+    border: none;
+}
+.personal_box .textfild_row .cover-bg input
+{
+    border: none;
+    padding: 0px;
+    font-size: 12px;
+    width: 220px;
+}
+.personal_box .textfild_row textarea
+{
+    min-width: 419px;
+    max-width: 419px;
+    min-height: 132px;
+    max-height: 132px;
+    color: #333;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+.personal_box .bottom_button
+{
+    float: right;
+    margin-top: 25px;
+}
+.parsonal_textfild label{width:72px; float:left; margin-right:8px; font-size:13px; color:#333333; line-height:24px;}
+.parsonal_textfild label span{ }
+.parsonal_textfild label.wide { width:170px; float:left; margin-right:8px; font-size:13px; color:#333333; line-height:24px;}
+.parsonal_select{border:solid 1px #dddddd; background:#fff; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; width:219px; padding:5px 5px; float:left;}
+.parsonal_select select{border-style: none;border-color: inherit;border-width: medium;background: ;width:220px;height: 17px;}
+.textfild
+{
+    padding-bottom: 20px;
+}
+

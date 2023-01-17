@@ -1,0 +1,16 @@
+D:\Projects\4ClearOrtho\4eOrtho.Utility\bin\Release\4eOrtho.Utility.dll
+D:\Projects\4ClearOrtho\4eOrtho.Utility\bin\Release\4eOrtho.Utility.pdb
+D:\Projects\4ClearOrtho\4eOrtho.Utility\bin\Release\log4net.dll
+D:\Projects\4ClearOrtho\4eOrtho.Utility\bin\Release\log4net.xml
+D:\Projects\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.csproj.CoreCompileInputs.cache
+D:\Projects\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.csproj.CopyComplete
+D:\Projects\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.dll
+D:\Projects\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.pdb
+D:\Projects\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.csproj.AssemblyReference.cache
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\bin\Release\4eOrtho.Utility.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\bin\Release\4eOrtho.Utility.pdb
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\bin\Release\log4net.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\bin\Release\log4net.xml
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.csprojResolveAssemblyReference.cache
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.dll
+E:\Freelancer Work\Yaashasvi Jadav\4ClearOrtho\4ClearOrtho\4eOrtho.Utility\obj\Release\4eOrtho.Utility.pdb

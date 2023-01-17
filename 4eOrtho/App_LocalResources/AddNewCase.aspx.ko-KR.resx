@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>백</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>백</value>
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="chkIsActiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrhtoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOtherConditionResource1.Text" xml:space="preserve">
+    <value>다른</value>
+  </data>
+  <data name="chkOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCaseNoResource1.Text" xml:space="preserve">
+    <value>사건 번호</value>
+  </data>
+  <data name="lblCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateofBirthResource1.Text" xml:space="preserve">
+    <value>생년월일</value>
+  </data>
+  <data name="lblDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>이메일 아이디</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExistingResource1.Text" xml:space="preserve">
+    <value>환자 유형</value>
+  </data>
+  <data name="lblExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>성별</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>환자 / 새로운 케이스를 추가</value>
+  </data>
+  <data name="lblHeaderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIsActiveResource1.Text" xml:space="preserve">
+    <value>활성</value>
+  </data>
+  <data name="lblIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>성</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotesResource1.Text" xml:space="preserve">
+    <value>케이스 세부 정보</value>
+  </data>
+  <data name="lblNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoConditionResource1.Text" xml:space="preserve">
+    <value>직교 조건</value>
+  </data>
+  <data name="lblOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoSysResource1.Text" xml:space="preserve">
+    <value>직교 시스템</value>
+  </data>
+  <data name="lblOrthoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectPatientResource1.Text" xml:space="preserve">
+    <value>선택 환자</value>
+  </data>
+  <data name="lblSelectPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>쟁반</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>TRAY</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>브라켓</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>BRACKET</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>군집</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>CROWDING</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>간격</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>SPACING</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>크로스 이빨</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>CROSSBITE</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>열기 이빨</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>OPENBITE</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>깊은 이빨</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>DEEPBITE</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>좁은 아치</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>NARROWARCH</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnAnteriorResource1.Text" xml:space="preserve">
+    <value>전방</value>
+  </data>
+  <data name="rbtnAnteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnExistingResource1.Text" xml:space="preserve">
+    <value>현존하는</value>
+  </data>
+  <data name="rbtnExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnFemaleResource1.Text" xml:space="preserve">
+    <value>여성</value>
+  </data>
+  <data name="rbtnFemaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnMaleResource1.Text" xml:space="preserve">
+    <value>남성</value>
+  </data>
+  <data name="rbtnMaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnNewResource1.Text" xml:space="preserve">
+    <value>새로운</value>
+  </data>
+  <data name="rbtnNewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnPosteriorResource1.Text" xml:space="preserve">
+    <value>후부</value>
+  </data>
+  <data name="rbtnPosteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>이름을 입력 해주세요</value>
+  </data>
+  <data name="rfvFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ErrorMessage" xml:space="preserve">
+    <value>환자를 선택하세요</value>
+  </data>
+  <data name="rfvPatientResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ErrorMessage" xml:space="preserve">
+    <value>생년월일을 선택하십시오.</value>
+  </data>
+  <data name="rfvtxtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>이메일 아이디를 입력하세요.</value>
+  </data>
+  <data name="rfvtxtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>마지막으로 이름을 입력하세요</value>
+  </data>
+  <data name="rfvtxtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ErrorMessage" xml:space="preserve">
+    <value>유효한 이메일 ID의 예를 입력하십시오 'abc@yahoo.com'</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>날짜 선택</value>
+  </data>
+  <data name="SelectPatient" xml:space="preserve">
+    <value>선택 환자</value>
+  </data>
+  <data name="txtCaseNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>끝</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음에</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>金额 </value>
+  </data>
+  <data name="PackageDetails" xml:space="preserve">
+    <value>旅游套票详情 </value>
+  </data>
+  <data name="PackageImage" xml:space="preserve">
+    <value>패키지 이미지</value>
+  </data>
+  <data name="Product Image" xml:space="preserve">
+    <value>제품 이미지</value>
+  </data>
+  <data name="ProductImage" xml:space="preserve">
+    <value>제품 이미지</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>产品名称 </value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>数量 </value>
+  </data>
+  <data name="SelectPackage" xml:space="preserve">
+    <value>패키지 선택 </value>
+  </data>
+  <data name="SelectProduct" xml:space="preserve">
+    <value>제품 선택 </value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="CardNoIsNotMatch" xml:space="preserve">
+    <value>아니오 카드 유형과 일치하지 않는 카드, 유효한 카드 번호를 입력하거나 카드 종류를 변경하십시오</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>파일 크기는 2메가바이트보다 더 많은 수 없습니다!</value>
+  </data>
+  <data name="Isnotavalidimage" xml:space="preserve">
+    <value>올바른 이미지 파일이 아닙니다.</value>
+  </data>
+  <data name="lblAfterTemplateResource1.Text" xml:space="preserve">
+    <value>템플릿 후</value>
+  </data>
+  <data name="lblAmountResource1.Text" xml:space="preserve">
+    <value>금액 ($)</value>
+  </data>
+  <data name="lblAutomaticResource1.Text" xml:space="preserve">
+    <value>자동 갱신</value>
+  </data>
+  <data name="lblBeforeTemplateResource1.Text" xml:space="preserve">
+    <value>템플릿 전에</value>
+  </data>
+  <data name="lblCardNumberResource1.Text" xml:space="preserve">
+    <value>카드 번호</value>
+  </data>
+  <data name="lblCareTypeResource1.Text" xml:space="preserve">
+    <value>카드 종류</value>
+  </data>
+  <data name="lblCaseDetailResource1.Text" xml:space="preserve">
+    <value>케이스 세부 정보</value>
+  </data>
+  <data name="lblCVVCodeResource1.Text" xml:space="preserve">
+    <value>CVV2 / CVC2 코드</value>
+  </data>
+  <data name="lblErrorMsgResource1.Text" xml:space="preserve">
+    <value>어떤 데이터를 찾을 수 없습니다</value>
+  </data>
+  <data name="lblExpiresResource1.Text" xml:space="preserve">
+    <value>만료</value>
+  </data>
+  <data name="lblHeaderSelectPackageResource1.Text" xml:space="preserve">
+    <value>패키지 선택</value>
+  </data>
+  <data name="lblHeaderSelectPatientResource1.Text" xml:space="preserve">
+    <value>선택 환자</value>
+  </data>
+  <data name="lblHeadPaymentResource1.Text" xml:space="preserve">
+    <value>결제하기</value>
+  </data>
+  <data name="lblNameonResource1.Text" xml:space="preserve">
+    <value>카드에 이름</value>
+  </data>
+  <data name="lblPayableAmountResource1.Text" xml:space="preserve">
+    <value>지급 금액</value>
+  </data>
+  <data name="lblProductAmountResource1.Text" xml:space="preserve">
+    <value>양</value>
+  </data>
+  <data name="lblReceivedResource1.Text" xml:space="preserve">
+    <value>받았다?</value>
+  </data>
+  <data name="lblRemarksResource1.Text" xml:space="preserve">
+    <value>비고</value>
+  </data>
+  <data name="lblTotalAmountResource1.Text" xml:space="preserve">
+    <value>총액</value>
+  </data>
+  <data name="MonthValidMessage" xml:space="preserve">
+    <value>현재 또는 미래의 달을 선택하십시오.</value>
+  </data>
+  <data name="Pleaseselectanyoneorthocondition" xml:space="preserve">
+    <value>하나 오르 조건을 선택하십시오.</value>
+  </data>
+  <data name="Pleaseuploadallimages" xml:space="preserve">
+    <value>모든 이미지를 업로드하십시오.</value>
+  </data>
+  <data name="SkipSubmit" xml:space="preserve">
+    <value>패키지 선택 건너 뛰기</value>
+  </data>
+  <data name="lblCreatedResource1.Text" xml:space="preserve">
+    <value>만든 날짜 :</value>
+  </data>
+  <data name="Anterior" xml:space="preserve">
+    <value>전방</value>
+  </data>
+  <data name="buttonContent" xml:space="preserve">
+    <value>드롭 / 이미지 선택</value>
+  </data>
+  <data name="FullFace" xml:space="preserve">
+    <value>풀 페이스</value>
+  </data>
+  <data name="LeftLateral" xml:space="preserve">
+    <value>왼쪽 측면</value>
+  </data>
+  <data name="Mandibulary" xml:space="preserve">
+    <value>하악</value>
+  </data>
+  <data name="Maxillary" xml:space="preserve">
+    <value>턱뼈</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>윤곽</value>
+  </data>
+  <data name="RightLateral" xml:space="preserve">
+    <value>오른쪽 측면</value>
+  </data>
+  <data name="Smile" xml:space="preserve">
+    <value>미소</value>
+  </data>
+  <data name="ViewPackage" xml:space="preserve">
+    <value>보기 패키지</value>
+  </data>
+  <data name="ViewPatient" xml:space="preserve">
+    <value>보기 환자</value>
+  </data>
+  <data name="ViewPayment" xml:space="preserve">
+    <value>보기 지불</value>
+  </data>
+  <data name="EditPatientCase" xml:space="preserve">
+    <value>보기 환자 / 새로운 케이스</value>
+  </data>
+  <data name="RETAINERCASECHARGE" xml:space="preserve">
+    <value>리테이너 케이스 세부 정보</value>
+  </data>
+  <data name="REWORKCASECHARGE" xml:space="preserve">
+    <value>리테이너 케이스 세부 정보</value>
+  </data>
+  <data name="lblCaseChargeResource1.Text" xml:space="preserve">
+    <value>케이스 요금 ($)</value>
+  </data>
+  <data name="lblDiscountResource1.Text" xml:space="preserve">
+    <value>- 할인 ($)</value>
+  </data>
+  <data name="lblPackageAmtResource1.Text" xml:space="preserve">
+    <value>신용 카드를 이용하여 지불</value>
+  </data>
+  <data name="lblTotalPayableResource1" xml:space="preserve">
+    <value>  채무 금액 ($)</value>
+  </data>
+  <data name="lblTotalResource1.Text" xml:space="preserve">
+    <value>신용 카드를 이용하여 지불</value>
+  </data>
+  <data name="ltrSelectModeResource1.Text" xml:space="preserve">
+    <value>선택 지불 방식</value>
+  </data>
+  <data name="PayusingCreditCard" xml:space="preserve">
+    <value>신용 카드를 사용하여 결제</value>
+  </data>
+  <data name="AlreadyPackage" xml:space="preserve">
+    <value>어느 한 지불 방법을 선택하세요.</value>
+  </data>
+  <data name="SelectPaymentMethod" xml:space="preserve">
+    <value>어느 한 지불 방법을 선택하세요.</value>
+  </data>
+  <data name="Pleaseselectcase" xml:space="preserve">
+    <value>어느 한 지불 방법을 선택하세요.</value>
+  </data>
+  <data name="QuantityErrorMessage" xml:space="preserve">
+    <value>수량이 0보다 gretter해야합니다.</value>
+  </data>
+  <data name="_ResorseObject" xml:space="preserve">
+    <value>전체 크기로 보려면 클릭하세요</value>
+    <comment>Click to view in fill size</comment>
+  </data>
+  <data name="btnApplyDiscount" xml:space="preserve">
+    <value>대다</value>
+    <comment>Apply</comment>
+  </data>
+  <data name="btnCancelDiscount" xml:space="preserve">
+    <value>취소하다</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="chkIsRegularShipmentResource1.Text" xml:space="preserve">
+    <value>일반 출하</value>
+    <comment>Regular Shipment</comment>
+  </data>
+  <data name="lblDiscountCouponCodeResource1.Text" xml:space="preserve">
+    <value>할인 쿠폰 코드</value>
+    <comment>Discount Coupon Code</comment>
+  </data>
+  <data name="lblExpressShipmentResource1.Text" xml:space="preserve">
+    <value>특급 배송</value>
+    <comment>Express Shipment</comment>
+  </data>
+  <data name="Couponisnotvalidorexpired" xml:space="preserve">
+    <value>쿠폰 코드는 유효하거나 만료되지 않습니다.</value>
+    <comment>Coupon code is not valid or expired.</comment>
+  </data>
+  <data name="Entercouponcode" xml:space="preserve">
+    <value>쿠폰 코드를 입력하세요</value>
+    <comment>Please enter coupon code</comment>
+  </data>
+  <data name="lblBacktopaymentResource1.Text" xml:space="preserve">
+    <value>다시 지불 모드 선택합니다.</value>
+    <comment>Back to payment mode selection.</comment>
+  </data>
+</root>

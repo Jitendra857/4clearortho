@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnBackResource1.Text" xml:space="preserve">
+    <value>背部</value>
+  </data>
+  <data name="btnBackResource1.ToolTip" xml:space="preserve">
+    <value>背部</value>
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btnSubmitResource1.Text" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="btnSubmitResource1.ToolTip" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="chkIsActiveResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrhtoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkOtherConditionResource1.Text" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="chkOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCaseNoResource1.Text" xml:space="preserve">
+    <value>案件编号：</value>
+  </data>
+  <data name="lblCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateofBirthResource1.Text" xml:space="preserve">
+    <value>出生日期</value>
+  </data>
+  <data name="lblDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmailResource1.Text" xml:space="preserve">
+    <value>电子邮件标识</value>
+  </data>
+  <data name="lblEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExistingResource1.Text" xml:space="preserve">
+    <value>病人类型</value>
+  </data>
+  <data name="lblExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblGenderResource1.Text" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="lblGenderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHeaderResource1.Text" xml:space="preserve">
+    <value>添加患者/新案例</value>
+  </data>
+  <data name="lblHeaderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIsActiveResource1.Text" xml:space="preserve">
+    <value>为主动</value>
+  </data>
+  <data name="lblIsActiveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMsgResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNotesResource1.Text" xml:space="preserve">
+    <value>案例詳細</value>
+  </data>
+  <data name="lblNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoConditionResource1.Text" xml:space="preserve">
+    <value>邻条件</value>
+  </data>
+  <data name="lblOrthoConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblOrthoSysResource1.Text" xml:space="preserve">
+    <value>邻位系统</value>
+  </data>
+  <data name="lblOrthoSysResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectPatientResource1.Text" xml:space="preserve">
+    <value>选择患者</value>
+  </data>
+  <data name="lblSelectPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>盘</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>TRAY</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>托架</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>BRACKET</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>拥挤</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>CROWDING</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>间距</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>SPACING</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>十字撕咬</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>CROSSBITE</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>咬开</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>OPENBITE</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>深咬</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>DEEPBITE</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>窄拱门</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>NARROWARCH</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnAnteriorResource1.Text" xml:space="preserve">
+    <value>前面的</value>
+  </data>
+  <data name="rbtnAnteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnExistingResource1.Text" xml:space="preserve">
+    <value>现有</value>
+  </data>
+  <data name="rbtnExistingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnFemaleResource1.Text" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="rbtnFemaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnMaleResource1.Text" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="rbtnMaleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnNewResource1.Text" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="rbtnNewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtnPosteriorResource1.Text" xml:space="preserve">
+    <value>后</value>
+  </data>
+  <data name="rbtnPosteriorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ErrorMessage" xml:space="preserve">
+    <value>请输入名字</value>
+  </data>
+  <data name="rfvFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ErrorMessage" xml:space="preserve">
+    <value>请选择病人</value>
+  </data>
+  <data name="rfvPatientResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvPatientResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ErrorMessage" xml:space="preserve">
+    <value>请选择出生日期。</value>
+  </data>
+  <data name="rfvtxtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>请输入邮箱编号。</value>
+  </data>
+  <data name="rfvtxtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ErrorMessage" xml:space="preserve">
+    <value>请输入姓氏</value>
+  </data>
+  <data name="rfvtxtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvtxtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ErrorMessage" xml:space="preserve">
+    <value>请输入有效的电子邮件ID如：“abc@yahoo.com”</value>
+  </data>
+  <data name="rgvEmailAddressCheckResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvEmailAddressCheckResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SelectDate" xml:space="preserve">
+    <value>选择日期</value>
+  </data>
+  <data name="SelectPatient" xml:space="preserve">
+    <value>选择患者</value>
+  </data>
+  <data name="txtCaseNoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCaseNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateofBirthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtOtherConditionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>完</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>金额 </value>
+  </data>
+  <data name="PackageDetails" xml:space="preserve">
+    <value>旅游套票详情 </value>
+  </data>
+  <data name="ProductImage" xml:space="preserve">
+    <value>产品图片</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>产品名称 </value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>数量 </value>
+  </data>
+  <data name="SelectPackage" xml:space="preserve">
+    <value>选择包 </value>
+  </data>
+  <data name="SelectProduct" xml:space="preserve">
+    <value>选择产品 </value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>总</value>
+  </data>
+  <data name="CardNoIsNotMatch" xml:space="preserve">
+    <value>卡号不与卡类型相匹配，请输入有效的信用卡号码或更改卡类型</value>
+  </data>
+  <data name="FileSize" xml:space="preserve">
+    <value>文件大小不能超过2MB！</value>
+  </data>
+  <data name="Isnotavalidimage" xml:space="preserve">
+    <value>是不是有效的图像文件。</value>
+  </data>
+  <data name="lblAfterTemplateResource1.Text" xml:space="preserve">
+    <value>模板后，</value>
+  </data>
+  <data name="lblAmountResource1.Text" xml:space="preserve">
+    <value>金额（元）</value>
+  </data>
+  <data name="lblAutomaticResource1.Text" xml:space="preserve">
+    <value>自动续订</value>
+  </data>
+  <data name="lblBeforeTemplateResource1.Text" xml:space="preserve">
+    <value>模板之前</value>
+  </data>
+  <data name="lblCardNumberResource1.Text" xml:space="preserve">
+    <value>卡号</value>
+  </data>
+  <data name="lblCareTypeResource1.Text" xml:space="preserve">
+    <value>卡类型</value>
+  </data>
+  <data name="lblCaseDetailResource1.Text" xml:space="preserve">
+    <value>案例详细</value>
+  </data>
+  <data name="lblCVVCodeResource1.Text" xml:space="preserve">
+    <value>CVV2 / CVC2码</value>
+  </data>
+  <data name="lblErrorMsgResource1.Text" xml:space="preserve">
+    <value>找不到数据</value>
+  </data>
+  <data name="lblExpiresResource1.Text" xml:space="preserve">
+    <value>过期</value>
+  </data>
+  <data name="lblHeaderSelectPackageResource1.Text" xml:space="preserve">
+    <value>选择套餐</value>
+  </data>
+  <data name="lblHeaderSelectPatientResource1.Text" xml:space="preserve">
+    <value>选择病人</value>
+  </data>
+  <data name="lblHeadPaymentResource1.Text" xml:space="preserve">
+    <value>付款</value>
+  </data>
+  <data name="lblNameonResource1.Text" xml:space="preserve">
+    <value>持卡人姓名</value>
+  </data>
+  <data name="lblPayableAmountResource1.Text" xml:space="preserve">
+    <value>应付金额</value>
+  </data>
+  <data name="lblProductAmountResource1.Text" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="lblReceivedResource1.Text" xml:space="preserve">
+    <value>：收到？</value>
+  </data>
+  <data name="lblRemarksResource1.Text" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="lblTotalAmountResource1.Text" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="MonthValidMessage" xml:space="preserve">
+    <value>请选择当前或未来的月份。</value>
+  </data>
+  <data name="Pleaseselectanyoneorthocondition" xml:space="preserve">
+    <value>请选择任何一个邻条件。</value>
+  </data>
+  <data name="Pleaseuploadallimages" xml:space="preserve">
+    <value>请上传所有图像。</value>
+  </data>
+  <data name="SkipSubmit" xml:space="preserve">
+    <value>跳过软件包选择</value>
+  </data>
+  <data name="lblCreatedResource1.Text" xml:space="preserve">
+    <value>創建日期：</value>
+  </data>
+  <data name="Anterior" xml:space="preserve">
+    <value>前面的</value>
+  </data>
+  <data name="buttonContent" xml:space="preserve">
+    <value>滴/选择图片</value>
+  </data>
+  <data name="FullFace" xml:space="preserve">
+    <value>全脸</value>
+  </data>
+  <data name="LeftLateral" xml:space="preserve">
+    <value>左外侧</value>
+  </data>
+  <data name="Mandibulary" xml:space="preserve">
+    <value>下颌</value>
+  </data>
+  <data name="Maxillary" xml:space="preserve">
+    <value>上颌</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>轮廓</value>
+  </data>
+  <data name="RightLateral" xml:space="preserve">
+    <value>右侧卧位</value>
+  </data>
+  <data name="Smile" xml:space="preserve">
+    <value>微笑</value>
+  </data>
+  <data name="ViewPackage" xml:space="preserve">
+    <value>查看包装</value>
+  </data>
+  <data name="ViewPatient" xml:space="preserve">
+    <value>查看病人</value>
+  </data>
+  <data name="ViewPayment" xml:space="preserve">
+    <value>查看支付</value>
+  </data>
+  <data name="EditPatientCase" xml:space="preserve">
+    <value>查看病人/新案例</value>
+  </data>
+  <data name="RETAINERCASECHARGE" xml:space="preserve">
+    <value>固定器套详细</value>
+  </data>
+  <data name="REWORKCASECHARGE" xml:space="preserve">
+    <value>固定器套详细</value>
+  </data>
+  <data name="lblCaseChargeResource1.Text" xml:space="preserve">
+    <value>案例費（$）</value>
+  </data>
+  <data name="lblDiscountResource1.Text" xml:space="preserve">
+    <value> - 折扣（$）</value>
+  </data>
+  <data name="lblPackageAmtResource1.Text" xml:space="preserve">
+    <value>使用信用卡支付</value>
+  </data>
+  <data name="lblTotalPayableResource1" xml:space="preserve">
+    <value>  应付金额（$）</value>
+  </data>
+  <data name="lblTotalResource1.Text" xml:space="preserve">
+    <value>使用信用卡支付</value>
+  </data>
+  <data name="ltrSelectModeResource1.Text" xml:space="preserve">
+    <value>选择付款方式</value>
+  </data>
+  <data name="PayusingCreditCard" xml:space="preserve">
+    <value>使用信用卡付款</value>
+  </data>
+  <data name="AlreadyPackage" xml:space="preserve">
+    <value>请选择任何一种付款方式。</value>
+  </data>
+  <data name="SelectPaymentMethod" xml:space="preserve">
+    <value>请选择任何一种付款方式。</value>
+  </data>
+  <data name="Pleaseselectcase" xml:space="preserve">
+    <value>请选择任何一种付款方式。</value>
+  </data>
+  <data name="QuantityErrorMessage" xml:space="preserve">
+    <value>量必须大于0 gretter。</value>
+  </data>
+  <data name="_ResorseObject" xml:space="preserve">
+    <value>点击查看全尺寸</value>
+    <comment>Click to view in fill size</comment>
+  </data>
+  <data name="btnApplyDiscount" xml:space="preserve">
+    <value>应用</value>
+    <comment>Apply</comment>
+  </data>
+  <data name="btnCancelDiscount" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="chkIsRegularShipmentResource1.Text" xml:space="preserve">
+    <value>定期装运</value>
+    <comment>Regular Shipment</comment>
+  </data>
+  <data name="lblDiscountCouponCodeResource1.Text" xml:space="preserve">
+    <value>折扣优惠券代码</value>
+    <comment>Discount Coupon Code</comment>
+  </data>
+  <data name="lblExpressShipmentResource1.Text" xml:space="preserve">
+    <value>快递装运</value>
+    <comment>Express Shipment</comment>
+  </data>
+  <data name="Couponisnotvalidorexpired" xml:space="preserve">
+    <value>优惠券代码无效或已过期。</value>
+    <comment>Coupon code is not valid or expired.</comment>
+  </data>
+  <data name="Entercouponcode" xml:space="preserve">
+    <value>请输入优惠券代码</value>
+    <comment>Please enter coupon code</comment>
+  </data>
+  <data name="lblBacktopaymentResource1.Text" xml:space="preserve">
+    <value>返回付款模式选择。</value>
+    <comment>Back to payment mode selection.</comment>
+  </data>
+</root>
